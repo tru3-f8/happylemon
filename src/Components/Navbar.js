@@ -28,6 +28,7 @@ const NavbarListContainer = styled.div`
   justify-content: center;
   align-items: center;
   height: 100%;
+ 
 
   @media screen and (min-width: 768px) {
       width: 550px;
