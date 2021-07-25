@@ -20,7 +20,7 @@ function Navbar() {
 export default Navbar;
 
 const NavbarContainer = styled.div`
-  background: #000;
+  background: rgb(254, 216, 0);
   width: 100%;
   height: 130px;
 `;
@@ -44,5 +44,5 @@ const NavbarList = styled.div`
 `;
 
 const NavbarListItem = styled.div`
-  color: #fff;
+   color: #000;
 `;
