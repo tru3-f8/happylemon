@@ -21,8 +21,7 @@ export default Navbar;
 
 const NavbarContainer = styled.div`
   background: rgb(254, 216, 0);
-  width: 100%;
-  height: 130px;
+  height: 100px;
 `;
 
 const NavbarListContainer = styled.div`

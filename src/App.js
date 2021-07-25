@@ -2,6 +2,7 @@ import React from 'react';
 import ImageSlider from './Components/ImageSlider';
 import Navbar from './Components/Navbar';
 import './App.css';
+import Menu from './Components/Menu';
 
 
 
@@ -10,6 +11,7 @@ function App() {
     <div className='App'>
       <Navbar />
       <ImageSlider />
+      <Menu />
     </div>
   );
 }

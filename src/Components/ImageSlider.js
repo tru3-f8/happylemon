@@ -56,7 +56,7 @@ export default ImageSlider;
 const ImageSliderContainer = styled.div`
   height: 800px;
   width: 1100px;
-  margin: 35px auto;
+  margin: 85px auto;
   border: 3px solid #000;
   border-radius: 30px;
   background: white;
