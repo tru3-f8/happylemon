@@ -20,8 +20,12 @@ function Navbar() {
 export default Navbar;
 
 const NavbarContainer = styled.div`
-  background: rgb(254, 216, 0);
+  background: #fff;
   height: 100px;
+  position: sticky;
+  z-index: 10;
+  top: 0;
+  text-transform: uppercase; 
 `;
 
 const NavbarListContainer = styled.div`
@@ -29,9 +33,8 @@ const NavbarListContainer = styled.div`
   align-items: center;
   height: 100%;
  
-
   @media screen and (min-width: 768px) {
-      width: 550px;
+      width: 750px;
       margin: 0 auto;
   }
 `;
@@ -45,4 +48,5 @@ const NavbarList = styled.div`
 
 const NavbarListItem = styled.div`
    color: #000;
+   padding: 0 30px;
 `;

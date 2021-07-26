@@ -13,7 +13,6 @@ function Menu() {
 export default Menu;
 
 const MenuContainer = styled.div`
-  background: rgb(254, 216, 0);
   height: 100vh;
 `;
 

@@ -54,27 +54,22 @@ function ImageSlider() {
 export default ImageSlider;
 
 const ImageSliderContainer = styled.div`
-  height: 800px;
+  height: 700px;
   width: 1200px;
-  margin: 85px auto;
-  border: 3px solid #000;
-  border-radius: 30px;
+  margin: 0 auto;
+  border-radius: 10px;
   background: #fff;
-  box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.3);
   transition: all 250ms cubic-bezier(0, 0, 0, 0) 0s;
 
   &:hover {
-    box-shadow: rgba(0, 0, 0, 0.8) 0px 40px 58px -16px,
-      rgba(0, 0, 0, 0.72) 0px 30px 22px -10px;
-
-    transform: scale(1.05);
+    transform: scale(1.21);
   }
 `;
 
 const ImageSliderCarouselContainer = styled.div`
-  height: 700px;
+  height: 600px;
   width: 1100px;
-  margin: 80px auto;
+  margin: 35px auto;
 `;
 
 const ImageSliderCarousel = styled(Slider)`
@@ -82,7 +77,6 @@ const ImageSliderCarousel = styled(Slider)`
   .slick-next:before {
     visibility: hidden;
   }
-
 `;
 
 const ImageItem = styled.div``;
