@@ -5,7 +5,62 @@ function Menu() {
   return (
     <MenuContainer>
       <MenuTitle>Menu</MenuTitle>
-      <MenuList></MenuList>
+      <MenuSubContainer>
+        <MenuListContainer>
+          <MenuList>
+            <MenuItems>
+              <MenuImage src='images/classic_milk_tea.jpeg' />
+              <MenuItem>A1 Classic Milk Tea</MenuItem>
+            </MenuItems>
+            <MenuItems>
+              <MenuImage src='images/classic_milk_tea.jpeg' />
+              <MenuItem>A1 Classic Milk Tea</MenuItem>
+            </MenuItems>
+            <MenuItems>
+              <MenuImage src='images/classic_milk_tea.jpeg' />
+              <MenuItem>A1 Classic Milk Tea</MenuItem>
+            </MenuItems>
+            <MenuItems>
+              <MenuImage src='images/classic_milk_tea.jpeg' />
+              <MenuItem>A1 Classic Milk Tea</MenuItem>
+            </MenuItems>
+            <MenuItems>
+              <MenuImage src='images/classic_milk_tea.jpeg' />
+              <MenuItem>A1 Classic Milk Tea</MenuItem>
+            </MenuItems>
+            <MenuItems>
+              <MenuImage src='images/classic_milk_tea.jpeg' />
+              <MenuItem>A1 Classic Milk Tea</MenuItem>
+            </MenuItems>
+          </MenuList>
+          <MenuList>
+            <MenuItems>
+              <MenuImage src='images/classic_milk_tea.jpeg' />
+              <MenuItem>A1 Classic Milk Tea</MenuItem>
+            </MenuItems>
+            <MenuItems>
+              <MenuImage src='images/classic_milk_tea.jpeg' />
+              <MenuItem>A1 Classic Milk Tea</MenuItem>
+            </MenuItems>
+            <MenuItems>
+              <MenuImage src='images/classic_milk_tea.jpeg' />
+              <MenuItem>A1 Classic Milk Tea</MenuItem>
+            </MenuItems>
+            <MenuItems>
+              <MenuImage src='images/classic_milk_tea.jpeg' />
+              <MenuItem>A1 Classic Milk Tea</MenuItem>
+            </MenuItems>
+            <MenuItems>
+              <MenuImage src='images/classic_milk_tea.jpeg' />
+              <MenuItem>A1 Classic Milk Tea</MenuItem>
+            </MenuItems>
+            <MenuItems>
+              <MenuImage src='images/classic_milk_tea.jpeg' />
+              <MenuItem>A1 Classic Milk Tea</MenuItem>
+            </MenuItems>
+          </MenuList>
+        </MenuListContainer>
+      </MenuSubContainer>
     </MenuContainer>
   );
 }
@@ -24,12 +79,42 @@ const MenuTitle = styled.h1`
   margin-bottom: 80px;
 `;
 
-const MenuList = styled.div`
-  height: 900px;
+const MenuSubContainer = styled.div`
+  height: 1250px;
   width: 1200px;
   border: 3px solid;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
   background: #fff;
+`;
+
+const MenuListContainer = styled.div`
+  display: flex;
+  justify-content: space-evenly;
+  padding: 50px 50px;
+`;
+
+const MenuList = styled.div``;
+
+const MenuItems = styled.div`
+  display: flex;
+  flex-direction: row;
+  padding: 10px 60px;
+`;
+
+const MenuImage = styled.img`
+  object-fit: cover;
+  width: 170px;
+  height: 170px;
+  border-bottom: 1px solid #e8e8e8;
+`;
+
+const MenuItem = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #e8e8e8;
+  width: 300px;
+  text-transform: uppercase;
 `;

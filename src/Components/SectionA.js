@@ -38,5 +38,7 @@ const SectionATitleTwo = styled.h1`
 `;
 
 const SectionADescription = styled.p`
-  margin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
