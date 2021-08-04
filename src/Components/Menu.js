@@ -117,4 +117,8 @@ const MenuItem = styled.div`
   border-bottom: 1px solid #e8e8e8;
   width: 300px;
   text-transform: uppercase;
+  color: rgb(144, 35, 2);
+  font-weight: normal;
+  font-family: "Righteous";
+  font-size: 20px;
 `;
