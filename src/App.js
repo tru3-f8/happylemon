@@ -2,19 +2,26 @@ import React from 'react';
 import Navbar from './Components/Navbar';
 import './App.css';
 import Menu from './Components/Menu';
-import ImageSection from './Components/ImageSection';
-import SectionA from './Components/SectionA';
-
-
+import Footer from './Components/Footer';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import Main from './Components/Main';
 
 function App() {
   return (
-    <div className='App'>
-      <Navbar />
-      <ImageSection />
-      <SectionA />
-      <Menu />
-    </div>
+    <Router>
+      <div className='App'>
+        <Navbar />
+        <Switch>
+          <Route path exact='/'>
+            <Main />
+          </Route>
+          <Route path='/menu'>
+            <Menu />
+          </Route>
+        </Switch>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 

@@ -1,12 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 function Navbar() {
   return (
     <NavbarContainer>
       <NavbarListContainer>
         <NavbarList>
-          <NavbarListItem>Menu</NavbarListItem>
+          <NavbarListItem to='menu'>Menu</NavbarListItem>
           <NavbarListItem>Location</NavbarListItem>
           <NavbarListItem>Top 10</NavbarListItem>
           <NavbarListItem>About</NavbarListItem>
@@ -20,22 +21,23 @@ function Navbar() {
 export default Navbar;
 
 const NavbarContainer = styled.div`
-  background: #fff;
+  /* background: #fff; */
+  background: rgb(254, 216, 0);
   height: 100px;
   position: sticky;
   z-index: 10;
   top: 0;
-  text-transform: uppercase; 
+  text-transform: uppercase;
 `;
 
 const NavbarListContainer = styled.div`
   justify-content: center;
   align-items: center;
   height: 100%;
- 
+
   @media screen and (min-width: 768px) {
-      width: 750px;
-      margin: 0 auto;
+    width: 750px;
+    margin: 0 auto;
   }
 `;
 
@@ -46,7 +48,9 @@ const NavbarList = styled.div`
   height: 100%;
 `;
 
-const NavbarListItem = styled.div`
-   color: #000;
-   padding: 0 30px;
+const NavbarListItem = styled(Link)`
+  color: #000;
+  padding: 0 30px;
+  cursor: pointer;
+  text-decoration: none;
 `;
