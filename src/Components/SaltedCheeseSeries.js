@@ -7,83 +7,33 @@ function SaltedCheeseSeries() {
       <SaltedCheeseSeriesSubContainer>
         <SaltedCheeseSeriesTitle>Salted Cheese Series</SaltedCheeseSeriesTitle>
         <SaltedCheeseSeriesListContainer>
+
           <SaltedCheeseSeriesList>
             <SaltedCheeseSeriesItems>
-              <SaltedCheeseSeriesImage src='images/classic_milk_tea.jpeg' />
-              <SaltedCheeseSeriesItem>
-                A1 Classic Milk Tea
-              </SaltedCheeseSeriesItem>
+              <SaltedCheeseSeriesImage src='images/jasmine_green_tea_with_salted_cheese.jpeg' />
+              <SaltedCheeseSeriesItem>B1 Jasmine Green Tea With Salted Cheese</SaltedCheeseSeriesItem>
             </SaltedCheeseSeriesItems>
             <SaltedCheeseSeriesItems>
-              <SaltedCheeseSeriesImage src='images/classic_milk_tea.jpeg' />
-              <SaltedCheeseSeriesItem>
-                A1 Classic Milk Tea
-              </SaltedCheeseSeriesItem>
+              <SaltedCheeseSeriesImage src='images/black_tea_with_salted_cheese.jpeg' />
+              <SaltedCheeseSeriesItem>B2 Black Tea With Salted Cheese</SaltedCheeseSeriesItem>
             </SaltedCheeseSeriesItems>
             <SaltedCheeseSeriesItems>
-              <SaltedCheeseSeriesImage src='images/classic_milk_tea.jpeg' />
-              <SaltedCheeseSeriesItem>
-                A1 Classic Milk Tea
-              </SaltedCheeseSeriesItem>
-            </SaltedCheeseSeriesItems>
-            <SaltedCheeseSeriesItems>
-              <SaltedCheeseSeriesImage src='images/classic_milk_tea.jpeg' />
-              <SaltedCheeseSeriesItem>
-                A1 Classic Milk Tea
-              </SaltedCheeseSeriesItem>
-            </SaltedCheeseSeriesItems>
-            <SaltedCheeseSeriesItems>
-              <SaltedCheeseSeriesImage src='images/classic_milk_tea.jpeg' />
-              <SaltedCheeseSeriesItem>
-                A1 Classic Milk Tea
-              </SaltedCheeseSeriesItem>
-            </SaltedCheeseSeriesItems>
-            <SaltedCheeseSeriesItems>
-              <SaltedCheeseSeriesImage src='images/classic_milk_tea.jpeg' />
-              <SaltedCheeseSeriesItem>
-                A1 Classic Milk Tea
-              </SaltedCheeseSeriesItem>
+              <SaltedCheeseSeriesImage src='images/milk_tea_with_salted_cheese.jpeg' />
+              <SaltedCheeseSeriesItem>B3 Milk Tea With Salted Cheese</SaltedCheeseSeriesItem>
             </SaltedCheeseSeriesItems>
           </SaltedCheeseSeriesList>
 
           <SaltedCheeseSeriesList>
-            <SaltedCheeseSeriesItems>
-              <SaltedCheeseSeriesImage src='images/classic_milk_tea.jpeg' />
-              <SaltedCheeseSeriesItem>
-                A1 Classic Milk Tea
-              </SaltedCheeseSeriesItem>
+          <SaltedCheeseSeriesItems>
+              <SaltedCheeseSeriesImage src='images/strawberry_green_tea_with_salted_cheese.jpeg' />
+              <SaltedCheeseSeriesItem>B4 Strawberry Green Tea With Salted Cheese</SaltedCheeseSeriesItem>
             </SaltedCheeseSeriesItems>
             <SaltedCheeseSeriesItems>
-              <SaltedCheeseSeriesImage src='images/classic_milk_tea.jpeg' />
-              <SaltedCheeseSeriesItem>
-                A1 Classic Milk Tea
-              </SaltedCheeseSeriesItem>
-            </SaltedCheeseSeriesItems>
-            <SaltedCheeseSeriesItems>
-              <SaltedCheeseSeriesImage src='images/classic_milk_tea.jpeg' />
-              <SaltedCheeseSeriesItem>
-                A1 Classic Milk Tea
-              </SaltedCheeseSeriesItem>
-            </SaltedCheeseSeriesItems>
-            <SaltedCheeseSeriesItems>
-              <SaltedCheeseSeriesImage src='images/classic_milk_tea.jpeg' />
-              <SaltedCheeseSeriesItem>
-                A1 Classic Milk Tea
-              </SaltedCheeseSeriesItem>
-            </SaltedCheeseSeriesItems>
-            <SaltedCheeseSeriesItems>
-              <SaltedCheeseSeriesImage src='images/classic_milk_tea.jpeg' />
-              <SaltedCheeseSeriesItem>
-                A1 Classic Milk Tea
-              </SaltedCheeseSeriesItem>
-            </SaltedCheeseSeriesItems>
-            <SaltedCheeseSeriesItems>
-              <SaltedCheeseSeriesImage src='images/classic_milk_tea.jpeg' />
-              <SaltedCheeseSeriesItem>
-                A1 Classic Milk Tea
-              </SaltedCheeseSeriesItem>
+              <SaltedCheeseSeriesImage src='images/matcha_latte_with_salted_cheese.jpeg' />
+              <SaltedCheeseSeriesItem>B5 Matcha Latte With Salted Cheese</SaltedCheeseSeriesItem>
             </SaltedCheeseSeriesItems>
           </SaltedCheeseSeriesList>
+
         </SaltedCheeseSeriesListContainer>
       </SaltedCheeseSeriesSubContainer>
     </SaltedCheeseSeriesContainer>
@@ -105,7 +55,7 @@ const SaltedCheeseSeriesTitle = styled.h1`
 `;
 
 const SaltedCheeseSeriesSubContainer = styled.div`
-  height: 1400px;
+  height: 830px;
   width: 1200px;
   border: 5px double rgb(144, 35, 2);
   justify-content: center;

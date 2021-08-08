@@ -10,23 +10,19 @@ function FreshLemonSeries() {
 
         <FreshLemonSeriesList>
             <FreshLemonSeriesItems>
-              <FreshLemonSeriesImage src='images/Classic_milk_tea.jpeg' />
-              <FreshLemonSeriesItem>A1 FreshLemon Milk Tea</FreshLemonSeriesItem>
+              <FreshLemonSeriesImage src='images/yakult_lemon_jasmine_green_tea.jpeg' />
+              <FreshLemonSeriesItem>C1 Yakult Lemon Jasmine Green Tea</FreshLemonSeriesItem>
             </FreshLemonSeriesItems>
             <FreshLemonSeriesItems>
-              <FreshLemonSeriesImage src='images/Classic_milk_tea.jpeg' />
-              <FreshLemonSeriesItem>A1 FreshLemon Milk Tea</FreshLemonSeriesItem>
+              <FreshLemonSeriesImage src='images/fresh_lemon_honey_jasmine_green_tea.jpeg' />
+              <FreshLemonSeriesItem>C2 Fresh Lemon Honey Jasmine Green Tea</FreshLemonSeriesItem>
             </FreshLemonSeriesItems>
           </FreshLemonSeriesList>
 
           <FreshLemonSeriesList>
             <FreshLemonSeriesItems>
-              <FreshLemonSeriesImage src='images/Classic_milk_tea.jpeg' />
-              <FreshLemonSeriesItem>A1 FreshLemon Milk Tea</FreshLemonSeriesItem>
-            </FreshLemonSeriesItems>
-            <FreshLemonSeriesItems>
-              <FreshLemonSeriesImage src='images/Classic_milk_tea.jpeg' />
-              <FreshLemonSeriesItem>A1 FreshLemon Milk Tea</FreshLemonSeriesItem>
+              <FreshLemonSeriesImage src='images/kumquat_lemon_jasmine_green_tea.jpeg' />
+              <FreshLemonSeriesItem>C3 Kumquat Lemon Jasmine Green Tea</FreshLemonSeriesItem>
             </FreshLemonSeriesItems>
           </FreshLemonSeriesList>
 

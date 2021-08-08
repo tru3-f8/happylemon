@@ -9,7 +9,9 @@ function Navbar() {
         <NavbarList>
           <NavbarListItem to='menu'>Menu</NavbarListItem>
           <NavbarListItem>Location</NavbarListItem>
-          <NavbarListItem>Top 10</NavbarListItem>
+          <NavbarListItem to='/' >
+            <NavbarImage src='images/happy_lemon_logo.jpeg' />
+          </NavbarListItem>
           <NavbarListItem>About</NavbarListItem>
           <NavbarListItem>Contact</NavbarListItem>
         </NavbarList>
@@ -46,6 +48,12 @@ const NavbarList = styled.div`
   justify-content: space-evenly;
   align-items: center;
   height: 100%;
+`;
+
+const NavbarImage = styled.img`
+  object-fit: contain;
+  width: 100px;
+  height: 80px;
 `;
 
 const NavbarListItem = styled(Link)`

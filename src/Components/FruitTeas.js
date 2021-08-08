@@ -7,35 +7,29 @@ function FruitTeas() {
       <FruitTeasSubContainer>
         <FruitTeasTitle>Fruit Teas</FruitTeasTitle>
         <FruitTeasListContainer>
+
           <FruitTeasList>
             <FruitTeasItems>
-              <FruitTeasImage src='images/classic_milk_tea.jpeg' />
-              <FruitTeasItem>A1 Classic Milk Tea</FruitTeasItem>
+              <FruitTeasImage src='images/mango_jasmine_green_tea.jpeg' />
+              <FruitTeasItem>F1 Mango Jasmine Green Tea</FruitTeasItem>
             </FruitTeasItems>
             <FruitTeasItems>
-              <FruitTeasImage src='images/classic_milk_tea.jpeg' />
-              <FruitTeasItem>A1 Classic Milk Tea</FruitTeasItem>
-            </FruitTeasItems>
-            <FruitTeasItems>
-              <FruitTeasImage src='images/classic_milk_tea.jpeg' />
-              <FruitTeasItem>A1 Classic Milk Tea</FruitTeasItem>
+              <FruitTeasImage src='images/fresh_grapefruit_green_tea.jpeg' />
+              <FruitTeasItem>F2 Fresh Grapefruit Green Tea</FruitTeasItem>
             </FruitTeasItems>
           </FruitTeasList>
 
           <FruitTeasList>
             <FruitTeasItems>
-              <FruitTeasImage src='images/classic_milk_tea.jpeg' />
-              <FruitTeasItem>A1 Classic Milk Tea</FruitTeasItem>
+              <FruitTeasImage src='images/strawberry_black_tea_with_lychee_jelly.jpeg' />
+              <FruitTeasItem>F3 Strawberry Black Tea With Lychee Jelly</FruitTeasItem>
             </FruitTeasItems>
             <FruitTeasItems>
-              <FruitTeasImage src='images/classic_milk_tea.jpeg' />
-              <FruitTeasItem>A1 Classic Milk Tea</FruitTeasItem>
-            </FruitTeasItems>
-            <FruitTeasItems>
-              <FruitTeasImage src='images/classic_milk_tea.jpeg' />
-              <FruitTeasItem>A1 Classic Milk Tea</FruitTeasItem>
+              <FruitTeasImage src='images/strawberry_jasmine_green_tea_with_lychee_jelly.jpeg' />
+              <FruitTeasItem>F4 Strawberry Jasmine Green Tea With Lychee Jelly</FruitTeasItem>
             </FruitTeasItems>
           </FruitTeasList>
+
         </FruitTeasListContainer>
       </FruitTeasSubContainer>
     </FruitTeasContainer>
@@ -57,7 +51,7 @@ const FruitTeasTitle = styled.h1`
 `;
 
 const FruitTeasSubContainer = styled.div`
-  height: 830px;
+  height: 650px;
   width: 1200px;
   border: 5px double rgb(144, 35, 2);
   justify-content: center;

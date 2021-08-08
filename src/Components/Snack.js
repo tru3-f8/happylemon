@@ -9,23 +9,23 @@ function Snack() {
         <SnackListContainer>
           <SnackList>
             <SnackItems>
-              <SnackImage src='images/Classic_milk_tea.jpeg' />
-              <SnackItem>A1 FreshLemon Milk Tea</SnackItem>
+              <SnackImage src='images/original_bubble_waffle.jpeg' />
+              <SnackItem>I1 Original Bubble Waffle</SnackItem>
             </SnackItems>
             <SnackItems>
-              <SnackImage src='images/Classic_milk_tea.jpeg' />
-              <SnackItem>A1 FreshLemon Milk Tea</SnackItem>
+              <SnackImage src='images/oreo_bubble_waffle.jpeg' />
+              <SnackItem>I2 Oreo Bubble Waffle</SnackItem>
             </SnackItems>
           </SnackList>
 
           <SnackList>
             <SnackItems>
-              <SnackImage src='images/Classic_milk_tea.jpeg' />
-              <SnackItem>A1 FreshLemon Milk Tea</SnackItem>
+              <SnackImage src='images/chocolate_bubble_waffle.jpeg' />
+              <SnackItem>I3 Chocolate Bubble Waffle</SnackItem>
             </SnackItems>
             <SnackItems>
-              <SnackImage src='images/Classic_milk_tea.jpeg' />
-              <SnackItem>A1 FreshLemon Milk Tea</SnackItem>
+              <SnackImage src='images/cheese_bubble_waffle.jpeg' />
+              <SnackItem>I4 Cheese Bubble Waffle</SnackItem>
             </SnackItems>
           </SnackList>
         </SnackListContainer>

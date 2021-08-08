@@ -7,35 +7,33 @@ function Smoothies() {
       <SmoothiesSubContainer>
         <SmoothiesTitle>Smoothies</SmoothiesTitle>
         <SmoothiesListContainer>
+
           <SmoothiesList>
             <SmoothiesItems>
-              <SmoothiesImage src='images/classic_milk_tea.jpeg' />
-              <SmoothiesItem>A1 Classic Milk Tea</SmoothiesItem>
+              <SmoothiesImage src='images/mango_matcha.jpeg' />
+              <SmoothiesItem>E1 Mango Matcha</SmoothiesItem>
             </SmoothiesItems>
             <SmoothiesItems>
-              <SmoothiesImage src='images/classic_milk_tea.jpeg' />
-              <SmoothiesItem>A1 Classic Milk Tea</SmoothiesItem>
+              <SmoothiesImage src='images/avocado_matcha.jpeg' />
+              <SmoothiesItem>E2 Avocado Matcha</SmoothiesItem>
             </SmoothiesItems>
             <SmoothiesItems>
-              <SmoothiesImage src='images/classic_milk_tea.jpeg' />
-              <SmoothiesItem>A1 Classic Milk Tea</SmoothiesItem>
+              <SmoothiesImage src='images/strawberry_shortcake_smoothie.jpeg' />
+              <SmoothiesItem>E3 Strawberry Shortcake Smoothie</SmoothiesItem>
             </SmoothiesItems>
           </SmoothiesList>
 
           <SmoothiesList>
             <SmoothiesItems>
-              <SmoothiesImage src='images/classic_milk_tea.jpeg' />
-              <SmoothiesItem>A1 Classic Milk Tea</SmoothiesItem>
+              <SmoothiesImage src='images/mango_smoothie.jpeg' />
+              <SmoothiesItem>E4 Mango Smoothie</SmoothiesItem>
             </SmoothiesItems>
             <SmoothiesItems>
-              <SmoothiesImage src='images/classic_milk_tea.jpeg' />
-              <SmoothiesItem>A1 Classic Milk Tea</SmoothiesItem>
-            </SmoothiesItems>
-            <SmoothiesItems>
-              <SmoothiesImage src='images/classic_milk_tea.jpeg' />
-              <SmoothiesItem>A1 Classic Milk Tea</SmoothiesItem>
+              <SmoothiesImage src='images/avocado_smoothie.jpeg' />
+              <SmoothiesItem>E5 Avocado Smoothie</SmoothiesItem>
             </SmoothiesItems>
           </SmoothiesList>
+          
         </SmoothiesListContainer>
       </SmoothiesSubContainer>
     </SmoothiesContainer>
