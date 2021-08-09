@@ -44,10 +44,11 @@ const FreshLemonSeriesTitle = styled.h1`
   align-items: center;
   padding-top: 50px;
   color: rgb(144, 35, 2);
+  font-family: Righteous;
 `;
 
 const FreshLemonSeriesSubContainer = styled.div`
-  height: 640px;
+  height: 650px;
   width: 1200px;
   border: 5px double rgb(144, 35, 2);
   justify-content: center;
@@ -80,7 +81,6 @@ const FreshLemonSeriesImage = styled.img`
 
 const FreshLemonSeriesItem = styled.div`
   display: flex;
-  justify-content: center;
   align-items: center;
   border-bottom: 1px solid #e8e8e8;
   width: 300px;

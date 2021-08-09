@@ -7,11 +7,15 @@ import SaltedCheeseSeries from './SaltedCheeseSeries';
 import Smoothies from './Smoothies';
 import Snack from './Snack';
 import Toppings from './Toppings';
+import MenuButton from '../MaterialUIFeatures/MenuButton';
+
 
 function Menu() {
   return (
     <MenuContainer>
-      <MenuTitle>Menu</MenuTitle>
+      <MenuTitle>
+        <MenuButton />
+      </MenuTitle>
       <ClassicSeries />
       <FreshLemonSeries />
       <Smoothies />
@@ -26,9 +30,7 @@ function Menu() {
 export default Menu;
 
 const MenuContainer = styled.div`
-  /* height: 600vh; */
   height: 660vh;
-  
 `;
 
 const MenuTitle = styled.h1`
@@ -38,3 +40,4 @@ const MenuTitle = styled.h1`
   padding-top: 100px;
   margin-bottom: 80px;
 `;
+

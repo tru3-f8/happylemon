@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
@@ -9,7 +9,7 @@ function Navbar() {
         <NavbarList>
           <NavbarListItem to='menu'>Menu</NavbarListItem>
           <NavbarListItem>Location</NavbarListItem>
-          <NavbarListItem to='/' >
+          <NavbarListItem to='/'>
             <NavbarImage src='images/happy_lemon_logo.jpeg' />
           </NavbarListItem>
           <NavbarListItem>About</NavbarListItem>
@@ -25,7 +25,7 @@ export default Navbar;
 const NavbarContainer = styled.div`
   /* background: #fff; */
   background: rgb(254, 216, 0);
-  height: 100px;
+  height: 110px;
   position: sticky;
   z-index: 10;
   top: 0;
@@ -54,6 +54,22 @@ const NavbarImage = styled.img`
   object-fit: contain;
   width: 100px;
   height: 80px;
+  background: #fff;
+  border-radius: 100%;
+  padding: 8px;
+
+  &:hover {
+    animation: rotation 1s infinite linear;
+    
+    @keyframes rotation {
+      from {
+        transform: rotateZ(0deg);
+      }
+      to {
+        transform: rotateZ(359deg);
+      }
+    }
+  }
 `;
 
 const NavbarListItem = styled(Link)`

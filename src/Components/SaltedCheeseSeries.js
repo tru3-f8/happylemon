@@ -52,10 +52,11 @@ const SaltedCheeseSeriesTitle = styled.h1`
   align-items: center;
   padding-top: 50px;
   color: rgb(144, 35, 2);
+  font-family: Righteous;
 `;
 
 const SaltedCheeseSeriesSubContainer = styled.div`
-  height: 830px;
+  height: 840px;
   width: 1200px;
   border: 5px double rgb(144, 35, 2);
   justify-content: center;
@@ -87,7 +88,6 @@ const SaltedCheeseSeriesImage = styled.img`
 
 const SaltedCheeseSeriesItem = styled.div`
   display: flex;
-  justify-content: center;
   align-items: center;
   border-bottom: 1px solid #e8e8e8;
   width: 300px;

@@ -48,6 +48,7 @@ const FruitTeasTitle = styled.h1`
   align-items: center;
   padding-top: 50px;
   color: rgb(144, 35, 2);
+  font-family: Righteous;
 `;
 
 const FruitTeasSubContainer = styled.div`
@@ -83,7 +84,6 @@ const FruitTeasImage = styled.img`
 
 const FruitTeasItem = styled.div`
   display: flex;
-  justify-content: center;
   align-items: center;
   border-bottom: 1px solid #e8e8e8;
   width: 300px;

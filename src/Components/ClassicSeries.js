@@ -70,10 +70,11 @@ const ClassicSeriesTitle = styled.h1`
   align-items: center;
   padding-top: 50px;
   color: rgb(144, 35, 2);
+  font-family: Righteous;
 `;
 
 const ClassicSeriesSubContainer = styled.div`
-  height: 1215px;
+  height: 1220px;
   width: 1200px;
   border: 5px double rgb(144, 35, 2);
   justify-content: center;
@@ -88,7 +89,9 @@ const ClassicSeriesListContainer = styled.div`
   padding: 50px 50px;
 `;
 
-const ClassicSeriesList = styled.div``;
+const ClassicSeriesList = styled.div`
+
+`;
 
 const ClassicSeriesItems = styled.div`
   display: flex;
@@ -105,7 +108,6 @@ const ClassicSeriesImage = styled.img`
 
 const ClassicSeriesItem = styled.div`
   display: flex;
-  justify-content: center;
   align-items: center;
   border-bottom: 1px solid #e8e8e8;
   width: 300px;

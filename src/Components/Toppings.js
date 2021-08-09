@@ -3,63 +3,45 @@ import styled from 'styled-components';
 
 function Toppings() {
   return (
-    <ToppingsContainer>
+    <ToppingsContainer id='toppings'>
       <ToppingsSubContainer>
         <ToppingsTitle>Toppings</ToppingsTitle>
         <ToppingsListContainer>
+
           <ToppingsList>
             <ToppingsItems>
-              <ToppingsImage src='images/classic_milk_tea.jpeg' />
-              <ToppingsItem>A1 Classic Milk Tea</ToppingsItem>
+              <ToppingsImage src='images/boba.jpeg' />
+              <ToppingsItem>Boba</ToppingsItem>
             </ToppingsItems>
             <ToppingsItems>
-              <ToppingsImage src='images/classic_milk_tea.jpeg' />
-              <ToppingsItem>A1 Classic Milk Tea</ToppingsItem>
+              <ToppingsImage src='images/pudding.jpeg' />
+              <ToppingsItem>Pudding</ToppingsItem>
             </ToppingsItems>
             <ToppingsItems>
-              <ToppingsImage src='images/classic_milk_tea.jpeg' />
-              <ToppingsItem>A1 Classic Milk Tea</ToppingsItem>
+              <ToppingsImage src='images/lychee_jelly.jpeg' />
+              <ToppingsItem>Lychee Jelly</ToppingsItem>
             </ToppingsItems>
             <ToppingsItems>
-              <ToppingsImage src='images/classic_milk_tea.jpeg' />
-              <ToppingsItem>A1 Classic Milk Tea</ToppingsItem>
-            </ToppingsItems>
-            <ToppingsItems>
-              <ToppingsImage src='images/classic_milk_tea.jpeg' />
-              <ToppingsItem>A1 Classic Milk Tea</ToppingsItem>
-            </ToppingsItems>
-            <ToppingsItems>
-              <ToppingsImage src='images/classic_milk_tea.jpeg' />
-              <ToppingsItem>A1 Classic Milk Tea</ToppingsItem>
+              <ToppingsImage src='images/aloe_vera.jpeg' />
+              <ToppingsItem>Aloe Vera</ToppingsItem>
             </ToppingsItems>
           </ToppingsList>
 
           <ToppingsList>
             <ToppingsItems>
-              <ToppingsImage src='images/classic_milk_tea.jpeg' />
-              <ToppingsItem>A1 Classic Milk Tea</ToppingsItem>
+              <ToppingsImage src='images/puff_cream.jpeg' />
+              <ToppingsItem>Puff Cream</ToppingsItem>
             </ToppingsItems>
             <ToppingsItems>
-              <ToppingsImage src='images/classic_milk_tea.jpeg' />
-              <ToppingsItem>A1 Classic Milk Tea</ToppingsItem>
+              <ToppingsImage src='images/mango_crystal_boba.jpeg' />
+              <ToppingsItem>Mango Crystal Boba</ToppingsItem>
             </ToppingsItems>
             <ToppingsItems>
-              <ToppingsImage src='images/classic_milk_tea.jpeg' />
-              <ToppingsItem>A1 Classic Milk Tea</ToppingsItem>
-            </ToppingsItems>
-            <ToppingsItems>
-              <ToppingsImage src='images/classic_milk_tea.jpeg' />
-              <ToppingsItem>A1 Classic Milk Tea</ToppingsItem>
-            </ToppingsItems>
-            <ToppingsItems>
-              <ToppingsImage src='images/classic_milk_tea.jpeg' />
-              <ToppingsItem>A1 Classic Milk Tea</ToppingsItem>
-            </ToppingsItems>
-            <ToppingsItems>
-              <ToppingsImage src='images/classic_milk_tea.jpeg' />
-              <ToppingsItem>A1 Classic Milk Tea</ToppingsItem>
+              <ToppingsImage src='images/salted_cheese.jpeg' />
+              <ToppingsItem>Salted Cheese</ToppingsItem>
             </ToppingsItems>
           </ToppingsList>
+
         </ToppingsListContainer>
       </ToppingsSubContainer>
     </ToppingsContainer>
@@ -78,10 +60,11 @@ const ToppingsTitle = styled.h1`
   align-items: center;
   padding-top: 50px;
   color: rgb(144, 35, 2);
+  font-family: Righteous;
 `;
 
 const ToppingsSubContainer = styled.div`
-  height: 1400px;
+  height: 955px;
   width: 1200px;
   border: 5px double rgb(144, 35, 2);
   justify-content: center;
@@ -107,8 +90,10 @@ const ToppingsItems = styled.div`
 const ToppingsImage = styled.img`
   object-fit: cover;
   width: 170px;
-  height: 170px;
+  height: 130px;
   border-bottom: 1px solid #e8e8e8;
+  border-radius: 5%;
+  margin-bottom: 20px;
 `;
 
 const ToppingsItem = styled.div`
@@ -122,4 +107,5 @@ const ToppingsItem = styled.div`
   font-weight: normal;
   font-family: 'Righteous';
   font-size: 20px;
+  margin-left: 15px;
 `;

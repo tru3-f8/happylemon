@@ -46,10 +46,11 @@ const SnackTitle = styled.h1`
   align-items: center;
   padding-top: 50px;
   color: rgb(144, 35, 2);
+  font-family: Righteous;
 `;
 
 const SnackSubContainer = styled.div`
-  height: 640px;
+  height: 610px;
   width: 1200px;
   border: 5px double rgb(144, 35, 2);
   justify-content: center;
@@ -64,7 +65,9 @@ const SnackListContainer = styled.div`
   padding: 50px 50px;
 `;
 
-const SnackList = styled.div``;
+const SnackList = styled.div`
+ 
+`;
 
 const SnackItems = styled.div`
   display: flex;
@@ -75,14 +78,16 @@ const SnackItems = styled.div`
 const SnackImage = styled.img`
   object-fit: cover;
   width: 170px;
-  height: 170px;
+  height: 130px;
   border-bottom: 1px solid #e8e8e8;
+  border-radius: 5%;
+  margin-bottom: 20px;
 `;
 
 const SnackItem = styled.div`
   display: flex;
-  justify-content: center;
   align-items: center;
+  padding-left: 25px;
   border-bottom: 1px solid #e8e8e8;
   width: 300px;
   text-transform: uppercase;
@@ -90,4 +95,5 @@ const SnackItem = styled.div`
   font-weight: normal;
   font-family: 'Righteous';
   font-size: 20px;
+  margin-left: 15px;
 `;
