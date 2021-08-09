@@ -1,31 +1,40 @@
 import React from 'react';
 import styled from 'styled-components';
+import { animateScroll as scroll } from 'react-scroll';
 
 function FreshLemonSeries() {
-  return (
-    <FreshLemonSeriesContainer>
-      <FreshLemonSeriesSubContainer>
-        <FreshLemonSeriesTitle>Fresh Lemon Series</FreshLemonSeriesTitle>
-        <FreshLemonSeriesListContainer>
+  const scrollToTop = () => {
+    scroll.scrollToTop();
+  };
 
-        <FreshLemonSeriesList>
+  return (
+    <FreshLemonSeriesContainer id='freshLemon'>
+      <FreshLemonSeriesSubContainer>
+        <FreshLemonSeriesTitle onClick={scrollToTop}>Fresh Lemon Series</FreshLemonSeriesTitle>
+        <FreshLemonSeriesListContainer>
+          <FreshLemonSeriesList>
             <FreshLemonSeriesItems>
               <FreshLemonSeriesImage src='images/yakult_lemon_jasmine_green_tea.jpeg' />
-              <FreshLemonSeriesItem>C1 Yakult Lemon Jasmine Green Tea</FreshLemonSeriesItem>
+              <FreshLemonSeriesItem>
+                C1 Yakult Lemon Jasmine Green Tea
+              </FreshLemonSeriesItem>
             </FreshLemonSeriesItems>
             <FreshLemonSeriesItems>
               <FreshLemonSeriesImage src='images/fresh_lemon_honey_jasmine_green_tea.jpeg' />
-              <FreshLemonSeriesItem>C2 Fresh Lemon Honey Jasmine Green Tea</FreshLemonSeriesItem>
+              <FreshLemonSeriesItem>
+                C2 Fresh Lemon Honey Jasmine Green Tea
+              </FreshLemonSeriesItem>
             </FreshLemonSeriesItems>
           </FreshLemonSeriesList>
 
           <FreshLemonSeriesList>
             <FreshLemonSeriesItems>
               <FreshLemonSeriesImage src='images/kumquat_lemon_jasmine_green_tea.jpeg' />
-              <FreshLemonSeriesItem>C3 Kumquat Lemon Jasmine Green Tea</FreshLemonSeriesItem>
+              <FreshLemonSeriesItem>
+                C3 Kumquat Lemon Jasmine Green Tea
+              </FreshLemonSeriesItem>
             </FreshLemonSeriesItems>
           </FreshLemonSeriesList>
-
         </FreshLemonSeriesListContainer>
       </FreshLemonSeriesSubContainer>
     </FreshLemonSeriesContainer>
@@ -35,7 +44,7 @@ function FreshLemonSeries() {
 export default FreshLemonSeries;
 
 const FreshLemonSeriesContainer = styled.div`
-    margin-top: 100px;
+  margin-top: 100px;
 `;
 
 const FreshLemonSeriesTitle = styled.h1`
@@ -45,6 +54,11 @@ const FreshLemonSeriesTitle = styled.h1`
   padding-top: 50px;
   color: rgb(144, 35, 2);
   font-family: Righteous;
+  cursor: pointer;
+
+  &:hover {
+    color: rgb(254, 216, 0);
+  }
 `;
 
 const FreshLemonSeriesSubContainer = styled.div`
@@ -63,8 +77,7 @@ const FreshLemonSeriesListContainer = styled.div`
   padding: 50px 50px;
 `;
 
-const FreshLemonSeriesList = styled.div`
-`;
+const FreshLemonSeriesList = styled.div``;
 
 const FreshLemonSeriesItems = styled.div`
   display: flex;

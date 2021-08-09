@@ -1,13 +1,17 @@
 import React from 'react';
 import styled from 'styled-components';
+import { animateScroll as scroll } from 'react-scroll';
 
 function ClassicSeries() {
-  return (
-    <ClassicSeriesContainer>
-      <ClassicSeriesSubContainer>
-        <ClassicSeriesTitle>Classic Series</ClassicSeriesTitle>
-        <ClassicSeriesListContainer>
+  const scrollToTop = () => {
+    scroll.scrollToTop();
+  };
 
+  return (
+    <ClassicSeriesContainer id='classic'>
+      <ClassicSeriesSubContainer>
+        <ClassicSeriesTitle onClick={scrollToTop}>Classic Series</ClassicSeriesTitle>
+        <ClassicSeriesListContainer>
           <ClassicSeriesList>
             <ClassicSeriesItems>
               <ClassicSeriesImage src='images/classic_milk_tea.jpeg' />
@@ -42,7 +46,9 @@ function ClassicSeries() {
             </ClassicSeriesItems>
             <ClassicSeriesItems>
               <ClassicSeriesImage src='images/wintermelon_with_fresh_milk.jpeg' />
-              <ClassicSeriesItem>A7 Wintermelon With Fresh Milk</ClassicSeriesItem>
+              <ClassicSeriesItem>
+                A7 Wintermelon With Fresh Milk
+              </ClassicSeriesItem>
             </ClassicSeriesItems>
             <ClassicSeriesItems>
               <ClassicSeriesImage src='images/taro_milk_tea.jpeg' />
@@ -53,7 +59,6 @@ function ClassicSeries() {
               <ClassicSeriesItem>A9 Green Tea/Black Tea</ClassicSeriesItem>
             </ClassicSeriesItems>
           </ClassicSeriesList>
-
         </ClassicSeriesListContainer>
       </ClassicSeriesSubContainer>
     </ClassicSeriesContainer>
@@ -71,6 +76,11 @@ const ClassicSeriesTitle = styled.h1`
   padding-top: 50px;
   color: rgb(144, 35, 2);
   font-family: Righteous;
+  cursor: pointer;
+
+  &:hover {
+    color: rgb(254, 216, 0);
+  }
 `;
 
 const ClassicSeriesSubContainer = styled.div`
@@ -89,9 +99,7 @@ const ClassicSeriesListContainer = styled.div`
   padding: 50px 50px;
 `;
 
-const ClassicSeriesList = styled.div`
-
-`;
+const ClassicSeriesList = styled.div``;
 
 const ClassicSeriesItems = styled.div`
   display: flex;

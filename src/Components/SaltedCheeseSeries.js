@@ -1,39 +1,52 @@
 import React from 'react';
 import styled from 'styled-components';
+import { animateScroll as scroll } from 'react-scroll';
 
 function SaltedCheeseSeries() {
-  return (
-    <SaltedCheeseSeriesContainer>
-      <SaltedCheeseSeriesSubContainer>
-        <SaltedCheeseSeriesTitle>Salted Cheese Series</SaltedCheeseSeriesTitle>
-        <SaltedCheeseSeriesListContainer>
+  const scrollToTop = () => {
+    scroll.scrollToTop();
+  };
 
+  return (
+    <SaltedCheeseSeriesContainer id='saltedCheese'>
+      <SaltedCheeseSeriesSubContainer>
+        <SaltedCheeseSeriesTitle onClick={scrollToTop}>Salted Cheese Series</SaltedCheeseSeriesTitle>
+        <SaltedCheeseSeriesListContainer>
           <SaltedCheeseSeriesList>
             <SaltedCheeseSeriesItems>
               <SaltedCheeseSeriesImage src='images/jasmine_green_tea_with_salted_cheese.jpeg' />
-              <SaltedCheeseSeriesItem>B1 Jasmine Green Tea With Salted Cheese</SaltedCheeseSeriesItem>
+              <SaltedCheeseSeriesItem>
+                B1 Jasmine Green Tea With Salted Cheese
+              </SaltedCheeseSeriesItem>
             </SaltedCheeseSeriesItems>
             <SaltedCheeseSeriesItems>
               <SaltedCheeseSeriesImage src='images/black_tea_with_salted_cheese.jpeg' />
-              <SaltedCheeseSeriesItem>B2 Black Tea With Salted Cheese</SaltedCheeseSeriesItem>
+              <SaltedCheeseSeriesItem>
+                B2 Black Tea With Salted Cheese
+              </SaltedCheeseSeriesItem>
             </SaltedCheeseSeriesItems>
             <SaltedCheeseSeriesItems>
               <SaltedCheeseSeriesImage src='images/milk_tea_with_salted_cheese.jpeg' />
-              <SaltedCheeseSeriesItem>B3 Milk Tea With Salted Cheese</SaltedCheeseSeriesItem>
+              <SaltedCheeseSeriesItem>
+                B3 Milk Tea With Salted Cheese
+              </SaltedCheeseSeriesItem>
             </SaltedCheeseSeriesItems>
           </SaltedCheeseSeriesList>
 
           <SaltedCheeseSeriesList>
-          <SaltedCheeseSeriesItems>
+            <SaltedCheeseSeriesItems>
               <SaltedCheeseSeriesImage src='images/strawberry_green_tea_with_salted_cheese.jpeg' />
-              <SaltedCheeseSeriesItem>B4 Strawberry Green Tea With Salted Cheese</SaltedCheeseSeriesItem>
+              <SaltedCheeseSeriesItem>
+                B4 Strawberry Green Tea With Salted Cheese
+              </SaltedCheeseSeriesItem>
             </SaltedCheeseSeriesItems>
             <SaltedCheeseSeriesItems>
               <SaltedCheeseSeriesImage src='images/matcha_latte_with_salted_cheese.jpeg' />
-              <SaltedCheeseSeriesItem>B5 Matcha Latte With Salted Cheese</SaltedCheeseSeriesItem>
+              <SaltedCheeseSeriesItem>
+                B5 Matcha Latte With Salted Cheese
+              </SaltedCheeseSeriesItem>
             </SaltedCheeseSeriesItems>
           </SaltedCheeseSeriesList>
-
         </SaltedCheeseSeriesListContainer>
       </SaltedCheeseSeriesSubContainer>
     </SaltedCheeseSeriesContainer>
@@ -53,6 +66,11 @@ const SaltedCheeseSeriesTitle = styled.h1`
   padding-top: 50px;
   color: rgb(144, 35, 2);
   font-family: Righteous;
+  cursor: pointer;
+
+  &:hover {
+    color: rgb(254, 216, 0);
+  }
 `;
 
 const SaltedCheeseSeriesSubContainer = styled.div`

@@ -1,11 +1,16 @@
 import React from 'react';
 import styled from 'styled-components';
+import { animateScroll as scroll } from 'react-scroll';
 
 function Snack() {
+  const scrollToTop = () => {
+    scroll.scrollToTop();
+  };
+
   return (
-    <SnackContainer>
+    <SnackContainer id='snack'>
       <SnackSubContainer>
-        <SnackTitle>Snack</SnackTitle>
+        <SnackTitle onClick={scrollToTop}>Snack</SnackTitle>
         <SnackListContainer>
           <SnackList>
             <SnackItems>
@@ -47,6 +52,11 @@ const SnackTitle = styled.h1`
   padding-top: 50px;
   color: rgb(144, 35, 2);
   font-family: Righteous;
+  cursor: pointer;
+
+  &:hover {
+    color: rgb(254, 216, 0);
+  }
 `;
 
 const SnackSubContainer = styled.div`
@@ -65,9 +75,7 @@ const SnackListContainer = styled.div`
   padding: 50px 50px;
 `;
 
-const SnackList = styled.div`
- 
-`;
+const SnackList = styled.div``;
 
 const SnackItems = styled.div`
   display: flex;

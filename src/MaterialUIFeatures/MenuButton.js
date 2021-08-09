@@ -1,17 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { withStyles } from '@material-ui/core/styles';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
-import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-
-
-import * as Scroll from 'react-scroll';
-import { Link as LinkS, animateScroll as scroll } from 'react-scroll';
-import Toppings from '../Components/Toppings';
-
+import { Link as LinkS } from 'react-scroll';
 
 
 const StyledMenu = withStyles({
@@ -46,7 +40,7 @@ const StyledMenuItem = withStyles((theme) => ({
 }))(MenuItem);
 
 export default function CustomizedMenus() {
-  const [anchorEl, setAnchorEl] = React.useState(null);
+  const [anchorEl, setAnchorEl] = useState(null);
 
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
@@ -56,10 +50,8 @@ export default function CustomizedMenus() {
     setAnchorEl(null);
   };
 
-
-  
   return (
-    <div>
+    <StyledMenuContainer>
       <StyledMenuListTitle
         aria-controls='customized-menu'
         aria-haspopup='true'
@@ -70,6 +62,7 @@ export default function CustomizedMenus() {
         Menu List
         <StyledMenuDropdown />
       </StyledMenuListTitle>
+
       <StyledMenu
         id='customized-menu'
         anchorEl={anchorEl}
@@ -77,39 +70,97 @@ export default function CustomizedMenus() {
         open={Boolean(anchorEl)}
         onClose={handleClose}
       >
-        <StyledMenuItem>
-          <ListItemMenuLink to='menu'>
-            <ListItemText primary='Classic Series' />
-          </ListItemMenuLink>
-        </StyledMenuItem>
-        <StyledMenuItem>
-          <ListItemText primary='Fresh Lemon Series' />
-        </StyledMenuItem>
-        <StyledMenuItem>
-          <ListItemText primary='Salted Cheese Series' />
-        </StyledMenuItem>
-        <StyledMenuItem>
-          <ListItemText primary='Fruit Teas' />
-        </StyledMenuItem>
-        <StyledMenuItem>
-          <ListItemText primary='Snack' />
-        </StyledMenuItem>
-        <StyledMenuToppingsLink
-            activeClass="active"
-            to="toppings"
-            spy={true}
-            smooth={true}
-            offset={-150}
-            duration={500}
+
+        <StyledMenuClassicLink
+          activeClass='active'
+          to='classic'
+          spy={true}
+          smooth={true}
+          offset={-150}
+          duration={500}
+          onClick={handleClose}
         >
-        <StyledMenuItem>
-          <ListItemText primary='Toppings' />
-        </StyledMenuItem>
+          <StyledMenuItem>
+            <ListItemText primary='Classic Series' />
+          </StyledMenuItem>
+        </StyledMenuClassicLink>
+
+        <StyledMenuFreshLemonLink
+          activeClass='active'
+          to='freshLemon'
+          spy={true}
+          smooth={true}
+          offset={-150}
+          duration={500}
+          onClick={handleClose}
+        >
+          <StyledMenuItem>
+            <ListItemText primary='Fresh Lemon Series' />
+          </StyledMenuItem>
+        </StyledMenuFreshLemonLink>
+
+        <StyledMenuSaltedCheeseLink
+          activeClass='active'
+          to='saltedCheese'
+          spy={true}
+          smooth={true}
+          offset={-150}
+          duration={500}
+          onClick={handleClose}
+        >
+          <StyledMenuItem>
+            <ListItemText primary='Salted Cheese Series' />
+          </StyledMenuItem>
+        </StyledMenuSaltedCheeseLink>
+
+        <StyledMenuFruitTeaLink
+          activeClass='active'
+          to='fruitTea'
+          spy={true}
+          smooth={true}
+          offset={-150}
+          duration={500}
+          onClick={handleClose}
+        >
+          <StyledMenuItem>
+            <ListItemText primary='Fruit Teas' />
+          </StyledMenuItem>
+        </StyledMenuFruitTeaLink>
+
+        <StyledMenuSnackLink
+          activeClass='active'
+          to='snack'
+          spy={true}
+          smooth={true}
+          offset={-150}
+          duration={500}
+          onClick={handleClose}
+        >
+          <StyledMenuItem>
+            <ListItemText primary='Snack' />
+          </StyledMenuItem>
+        </StyledMenuSnackLink>
+
+        <StyledMenuToppingsLink
+          activeClass='active'
+          to='toppings'
+          spy={true}
+          smooth={true}
+          offset={-150}
+          duration={500}
+          onClick={handleClose}
+        >
+          <StyledMenuItem>
+            <ListItemText primary='Toppings' />
+          </StyledMenuItem>
         </StyledMenuToppingsLink>
+
       </StyledMenu>
-    </div>
+    </StyledMenuContainer>
   );
 }
+
+const StyledMenuContainer = styled.div``;
 
 const StyledMenuListTitle = styled.div`
   border: 2px solid rgb(254, 216, 0);
@@ -129,9 +180,14 @@ const StyledMenuDropdown = styled(ArrowDropDownIcon)`
   margin-left: 15px;
 `;
 
-const ListItemMenuLink = styled(Link)`
-  color: #000;
-  text-decoration: none;
-`;
+const StyledMenuClassicLink = styled(LinkS)``;
+
+const StyledMenuFreshLemonLink = styled(LinkS)``;
+
+const StyledMenuSaltedCheeseLink = styled(LinkS)``;
+
+const StyledMenuFruitTeaLink = styled(LinkS)``;
+
+const StyledMenuSnackLink = styled(LinkS)``;
 
 const StyledMenuToppingsLink = styled(LinkS)``;

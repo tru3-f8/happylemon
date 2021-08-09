@@ -1,13 +1,17 @@
 import React from 'react';
 import styled from 'styled-components';
+import { animateScroll as scroll } from 'react-scroll';
 
 function FruitTeas() {
-  return (
-    <FruitTeasContainer>
-      <FruitTeasSubContainer>
-        <FruitTeasTitle>Fruit Teas</FruitTeasTitle>
-        <FruitTeasListContainer>
+  const scrollToTop = () => {
+    scroll.scrollToTop();
+  };
 
+  return (
+    <FruitTeasContainer id='fruitTea'>
+      <FruitTeasSubContainer>
+        <FruitTeasTitle onClick={scrollToTop}>Fruit Teas</FruitTeasTitle>
+        <FruitTeasListContainer>
           <FruitTeasList>
             <FruitTeasItems>
               <FruitTeasImage src='images/mango_jasmine_green_tea.jpeg' />
@@ -22,14 +26,17 @@ function FruitTeas() {
           <FruitTeasList>
             <FruitTeasItems>
               <FruitTeasImage src='images/strawberry_black_tea_with_lychee_jelly.jpeg' />
-              <FruitTeasItem>F3 Strawberry Black Tea With Lychee Jelly</FruitTeasItem>
+              <FruitTeasItem>
+                F3 Strawberry Black Tea With Lychee Jelly
+              </FruitTeasItem>
             </FruitTeasItems>
             <FruitTeasItems>
               <FruitTeasImage src='images/strawberry_jasmine_green_tea_with_lychee_jelly.jpeg' />
-              <FruitTeasItem>F4 Strawberry Jasmine Green Tea With Lychee Jelly</FruitTeasItem>
+              <FruitTeasItem>
+                F4 Strawberry Jasmine Green Tea With Lychee Jelly
+              </FruitTeasItem>
             </FruitTeasItems>
           </FruitTeasList>
-
         </FruitTeasListContainer>
       </FruitTeasSubContainer>
     </FruitTeasContainer>
@@ -49,6 +56,11 @@ const FruitTeasTitle = styled.h1`
   padding-top: 50px;
   color: rgb(144, 35, 2);
   font-family: Righteous;
+  cursor: pointer;
+
+  &:hover {
+    color: rgb(254, 216, 0);
+  }
 `;
 
 const FruitTeasSubContainer = styled.div`

@@ -1,13 +1,17 @@
 import React from 'react';
 import styled from 'styled-components';
+import { animateScroll as scroll } from 'react-scroll';
 
 function Smoothies() {
+  const scrollToTop = () => {
+    scroll.scrollToTop();
+  };
+
   return (
     <SmoothiesContainer>
       <SmoothiesSubContainer>
-        <SmoothiesTitle>Smoothies</SmoothiesTitle>
+        <SmoothiesTitle onClick={scrollToTop}>Smoothies</SmoothiesTitle>
         <SmoothiesListContainer>
-
           <SmoothiesList>
             <SmoothiesItems>
               <SmoothiesImage src='images/mango_matcha.jpeg' />
@@ -33,7 +37,6 @@ function Smoothies() {
               <SmoothiesItem>E5 Avocado Smoothie</SmoothiesItem>
             </SmoothiesItems>
           </SmoothiesList>
-          
         </SmoothiesListContainer>
       </SmoothiesSubContainer>
     </SmoothiesContainer>
@@ -53,6 +56,11 @@ const SmoothiesTitle = styled.h1`
   padding-top: 50px;
   color: rgb(144, 35, 2);
   font-family: Righteous;
+  cursor: pointer;
+
+  &:hover {
+    color: rgb(254, 216, 0);
+  }
 `;
 
 const SmoothiesSubContainer = styled.div`

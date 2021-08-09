@@ -1,13 +1,17 @@
 import React from 'react';
 import styled from 'styled-components';
+import { animateScroll as scroll } from 'react-scroll';
 
 function Toppings() {
+  const scrollToTop = () => {
+    scroll.scrollToTop();
+  };
+
   return (
     <ToppingsContainer id='toppings'>
       <ToppingsSubContainer>
-        <ToppingsTitle>Toppings</ToppingsTitle>
+        <ToppingsTitle onClick={scrollToTop}>Toppings</ToppingsTitle>
         <ToppingsListContainer>
-
           <ToppingsList>
             <ToppingsItems>
               <ToppingsImage src='images/boba.jpeg' />
@@ -41,7 +45,6 @@ function Toppings() {
               <ToppingsItem>Salted Cheese</ToppingsItem>
             </ToppingsItems>
           </ToppingsList>
-
         </ToppingsListContainer>
       </ToppingsSubContainer>
     </ToppingsContainer>
@@ -61,6 +64,11 @@ const ToppingsTitle = styled.h1`
   padding-top: 50px;
   color: rgb(144, 35, 2);
   font-family: Righteous;
+  cursor: pointer;
+
+  &:hover {
+    color: rgb(254, 216, 0);
+  }
 `;
 
 const ToppingsSubContainer = styled.div`
