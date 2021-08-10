@@ -163,16 +163,16 @@ export default function CustomizedMenus() {
 const StyledMenuContainer = styled.div``;
 
 const StyledMenuListTitle = styled.div`
-  border: 2px solid rgb(254, 216, 0);
+  border: 2px solid rgb(144, 35, 2);;
   padding: 15px;
   border-radius: 10px;
   cursor: pointer;
   font-family: Righteous;
-  color: rgb(254, 216, 0);
+  color: rgb(144, 35, 2);;
 
   &:hover {
-    background: rgb(254, 216, 0);
-    color: rgb(144, 35, 2);
+    background: rgb(144, 35, 2);
+    color: rgb(254, 216, 0);
   }
 `;
 

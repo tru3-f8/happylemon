@@ -1,6 +1,7 @@
 import React from 'react';
 import ImageSection from './ImageSection';
 import SectionA from './SectionA';
+import SectionB from './SectionB';
 
 
 function Main() {
@@ -8,6 +9,7 @@ function Main() {
     <div>
       <ImageSection />
       <SectionA />
+      <SectionB />
     </div>
   );
 }

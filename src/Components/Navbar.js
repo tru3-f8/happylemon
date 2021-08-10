@@ -1,15 +1,27 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 function Navbar() {
+  const [navbarBackground, setNavbarBackground] = useState(true);
+
+  const setNavBackground = () => {
+    setNavbarBackground(false);
+  };
+
+  const setNavDefaultBackground = () => {
+    setNavbarBackground(true);
+  };
+
   return (
-    <NavbarContainer>
+    <NavbarContainer background={navbarBackground}>
       <NavbarListContainer>
         <NavbarList>
-          <NavbarListItem to='menu'>Menu</NavbarListItem>
+          <NavbarListItem to='menu' onClick={setNavBackground}>
+            Menu
+          </NavbarListItem>
           <NavbarListItem>Location</NavbarListItem>
-          <NavbarListItem to='/'>
+          <NavbarListItem to='/' onClick={setNavDefaultBackground}>
             <NavbarImage src='images/happy_lemon_logo.jpeg' />
           </NavbarListItem>
           <NavbarListItem>About</NavbarListItem>
@@ -23,8 +35,7 @@ function Navbar() {
 export default Navbar;
 
 const NavbarContainer = styled.div`
-  /* background: #fff; */
-  background: rgb(254, 216, 0);
+  background: ${({ background }) => (background ? `#fff` : `rgb(254, 216, 0)`)};
   height: 110px;
   position: sticky;
   z-index: 10;
@@ -60,7 +71,7 @@ const NavbarImage = styled.img`
 
   &:hover {
     animation: rotation 1s infinite linear;
-    
+
     @keyframes rotation {
       from {
         transform: rotateZ(0deg);
