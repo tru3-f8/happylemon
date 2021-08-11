@@ -1,30 +1,33 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux';
+import { selectNavbarBackground, setNavbarBackground } from '../features/navbarBackgroundSlice';
 
 function Navbar() {
-  const [navbarBackground, setNavbarBackground] = useState(true);
-
+  const background = useSelector(selectNavbarBackground);
+  const dispatch = useDispatch();
+  
   const setNavBackground = () => {
-    setNavbarBackground(false);
+    dispatch(setNavbarBackground(false));
   };
 
-  const setNavDefaultBackground = () => {
-    setNavbarBackground(true);
-  };
+  // const setNavDefaultBackground = () => {
+  //   dispatch(setNavbarBackground(true));
+  // };
 
   return (
-    <NavbarContainer background={navbarBackground}>
+    <NavbarContainer background={background}>
       <NavbarListContainer>
         <NavbarList>
           <NavbarListItem to='menu' onClick={setNavBackground}>
             Menu
           </NavbarListItem>
           <NavbarListItem>Location</NavbarListItem>
-          <NavbarListItem to='/' onClick={setNavDefaultBackground}>
+          <NavbarListItem to='/'>
             <NavbarImage src='images/happy_lemon_logo.jpeg' />
           </NavbarListItem>
-          <NavbarListItem>About</NavbarListItem>
+          <NavbarListItem to='about' onClick={setNavBackground}>About</NavbarListItem>
           <NavbarListItem>Contact</NavbarListItem>
         </NavbarList>
       </NavbarListContainer>

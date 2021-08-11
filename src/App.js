@@ -5,23 +5,26 @@ import Menu from './Components/Menu';
 import Footer from './Components/Footer';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import Main from './Components/Main';
+import About from './Components/About';
 
 function App() {
   return (
     <Router>
-      <div className='App'>
+      <>
+      <Navbar />
         <Switch>
           <Route path exact='/'>
-            <Navbar />
             <Main />
           </Route>
           <Route path='/menu'>
-            <Navbar />
             <Menu />
+          </Route>
+          <Route path='/about'>
+            <About />
           </Route>
         </Switch>
         <Footer />
-      </div>
+      </>
     </Router>
   );
 }

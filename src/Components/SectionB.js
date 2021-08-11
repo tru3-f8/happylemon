@@ -17,8 +17,8 @@ function SectionB() {
         <SectionEighthImage src='images/main_image8.jpeg' />
         <SectionNinthImage src='images/main_image9.jpeg' />
 
-        <SectionTenthImage src='images/main_image7.jpeg' />
-        <SectionEleventhImage src='images/main_image9.jpeg' />
+        <SectionTenthImage src='images/main_image10.jpeg' />
+        <SectionEleventhImage src='images/main_image11.jpeg' />
       </SectionBSubContainer>
     </SectionBContainer>
   );
@@ -27,7 +27,7 @@ function SectionB() {
 export default SectionB;
 
 const SectionBContainer = styled.div`
-  height: 2000px;
+  height: 1600px;
   background: rgb(254, 216, 0);
 `;
 
@@ -49,6 +49,7 @@ const SectionFirstImage = styled.img`
   grid-row: 1 / 2;
   justify-self: end;
   width: 400px;
+  border-top-left-radius: 10px;
 `;
 
 const SectionSecondImage = styled.img`
@@ -65,6 +66,7 @@ const SectionThirdImage = styled.img`
   grid-row: 1 / 2;
   justify-self: stretch;
   width: 400px;
+  border-top-right-radius: 10px;
 `;
 
 const SectionFourthImage = styled.img`
@@ -101,7 +103,7 @@ const SectionSeventhImage = styled.img`
   padding-top: 867px;
   justify-self: end;
   width: 400px;
-  height: 270px;
+  height: 300px;
 `;
 
 const SectionEighthImage = styled.img`
@@ -120,7 +122,7 @@ const SectionNinthImage = styled.img`
   padding-top: 867px;
   justify-self: start;
   width: 400px;
-  height: 270px;
+  height: 300px;
 `;
 
 const SectionTenthImage = styled.img`
@@ -130,15 +132,17 @@ const SectionTenthImage = styled.img`
   padding-top: 1164px;
   justify-self: end;
   width: 400px;
-  height: 260px;
+  height: 250px;
+  border-bottom-left-radius: 10px;
 `;
 
 const SectionEleventhImage = styled.img`
   grid-area: eleventhImage;
   grid-column: 3 / 4;
   grid-row: 1 / 4;
-  padding-top: 1134px;
+  padding-top: 1164px;
   justify-self: start;
   width: 400px;
-  height: 280px;
+  height: 250px;
+  border-bottom-right-radius: 10px;
 `;
