@@ -16,6 +16,9 @@ function SectionB() {
         <SectionSeventhImage src='images/main_image7.jpeg' />
         <SectionEighthImage src='images/main_image8.jpeg' />
         <SectionNinthImage src='images/main_image9.jpeg' />
+
+        <SectionTenthImage src='images/main_image7.jpeg' />
+        <SectionEleventhImage src='images/main_image9.jpeg' />
       </SectionBSubContainer>
     </SectionBContainer>
   );
@@ -30,11 +33,13 @@ const SectionBContainer = styled.div`
 
 const SectionBSubContainer = styled.div`
   display: grid;
-  grid-template-columns: 768px 750px 768px;
+  grid-template-columns: 500px 500px 500px;
   grid-template-areas:
     'firstImage secondImage thirdImage'
     'fourthImage fifthImage sixthImage'
-    'seventhImage eighthImage ninthImage';
+    'seventhImage eighthImage ninthImage'
+    'tenthImage eleventhImage'
+    ;
   justify-content: center;
 `;
 
@@ -42,7 +47,8 @@ const SectionFirstImage = styled.img`
   grid-area: firstImage;
   grid-column: 1 / 2;
   grid-row: 1 / 2;
-  justify-self: stretch;
+  justify-self: end;
+  width: 400px;
 `;
 
 const SectionSecondImage = styled.img`
@@ -50,6 +56,7 @@ const SectionSecondImage = styled.img`
   grid-column: 2 / 3;
   grid-row: 1 / 2;
   justify-self: stretch;
+  width: 500px;
 `;
 
 const SectionThirdImage = styled.img`
@@ -57,14 +64,16 @@ const SectionThirdImage = styled.img`
   grid-column: 3 / 4;
   grid-row: 1 / 2;
   justify-self: stretch;
+  width: 400px;
 `;
 
 const SectionFourthImage = styled.img`
   grid-area: fourthImage;
   grid-column: 1 / 2;
   grid-row: 1 / 3;
-  padding-top: 768px;
+  padding-top: 600px;
   justify-self: end;
+  width: 400px;
 `;
 
 const SectionFifthImage = styled.img`
@@ -72,23 +81,27 @@ const SectionFifthImage = styled.img`
   grid-column: 2 / 3;
   grid-row: 1 / 2;
   justify-self: stretch;
-  padding-top: 512px;
+  padding-top: 330px;
+  width: 500px;
 `;
 
 const SectionSixthImage = styled.img`
   grid-area: sixthImage;
   grid-column: 3 / 4;
   grid-row: 1 / 3;
-  padding-top: 768px;
+  padding-top: 600px;
   justify-self: start;
+  width: 400px;
 `;
 
 const SectionSeventhImage = styled.img`
   grid-area: seventhImage;
   grid-column: 1 / 2;
   grid-row: 1 / 4;
-  padding-top: 1280px;
+  padding-top: 867px;
   justify-self: end;
+  width: 400px;
+  height: 270px;
 `;
 
 const SectionEighthImage = styled.img`
@@ -96,13 +109,36 @@ const SectionEighthImage = styled.img`
   grid-column: 2 / 3;
   grid-row: 1 / 2;
   justify-self: stretch;
-  padding-top: 1280px;
+  padding-top: 1080px;
+  width: 500px;
 `;
 
 const SectionNinthImage = styled.img`
   grid-area: ninthImage;
   grid-column: 3 / 4;
   grid-row: 1 / 4;
-  padding-top: 1280px;
+  padding-top: 867px;
   justify-self: start;
+  width: 400px;
+  height: 270px;
+`;
+
+const SectionTenthImage = styled.img`
+  grid-area: tenthImage;
+  grid-column: 1 / 2;
+  grid-row: 1 / 4;
+  padding-top: 1164px;
+  justify-self: end;
+  width: 400px;
+  height: 260px;
+`;
+
+const SectionEleventhImage = styled.img`
+  grid-area: eleventhImage;
+  grid-column: 3 / 4;
+  grid-row: 1 / 4;
+  padding-top: 1134px;
+  justify-self: start;
+  width: 400px;
+  height: 280px;
 `;
