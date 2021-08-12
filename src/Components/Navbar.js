@@ -28,7 +28,7 @@ function Navbar() {
             <NavbarImage src='images/happy_lemon_logo.jpeg' />
           </NavbarListItem>
           <NavbarListItem to='about' onClick={setNavBackground}>About</NavbarListItem>
-          <NavbarListItem>Contact</NavbarListItem>
+          <NavbarListItem to='contact' onClick={setNavBackground}>Contact</NavbarListItem>
         </NavbarList>
       </NavbarListContainer>
     </NavbarContainer>

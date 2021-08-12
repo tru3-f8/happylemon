@@ -4,7 +4,7 @@ import styled from 'styled-components';
 function About() {
   return (
     <AboutContainer>
-      <AboutBackground src='images/happy_lemon_logo.jpeg' />
+      <AboutImage src='images/happy_lemon_logo.jpeg' />
       <AboutSubContainer>
         <AboutTitle>Our Story</AboutTitle>
         <AboutContent>
@@ -36,7 +36,7 @@ const AboutContainer = styled.div`
   height: 70vh;
 `;
 
-const AboutBackground = styled.img`
+const AboutImage = styled.img`
   max-width: 50%;
   max-height: 50%;
   padding-top: 100px;
