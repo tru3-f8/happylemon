@@ -29,8 +29,6 @@ export default function ContainedButtons() {
     dispatch(setPhone(''));
     dispatch(setMessage(''));
 
-    <ContactModal />
-
   };
 
   return (

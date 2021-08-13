@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import Main from './Components/Main';
 import About from './Components/About';
 import Contact from './Components/Contact';
+import Location from './Components/Location';
 
 function App() {
   return (
@@ -25,6 +26,9 @@ function App() {
           </Route>
           <Route path='/contact'>
             <Contact />
+          </Route>
+          <Route path='/location'>
+            <Location />
           </Route>
         </Switch>
         <Footer />

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import TextareaAutosize from '@material-ui/core/TextareaAutosize';
 import ContactButton from '../MaterialUIFeatures/ContactButton';
+import ContactModal from '../MaterialUIFeatures/ContactModal';
 import { useDispatch, useSelector } from 'react-redux';
 import {
   selectMessage,
@@ -45,7 +46,7 @@ function Contact() {
             placeholder='Message'
             minRows={5}
           />
-          <ContactButton />
+          <ContactModal />
         </ContactSubContainerColumnTwo>
       </ContactContainerBox>
     </ContactContainer>
@@ -69,6 +70,7 @@ const ContactContainerBox = styled.div`
   width: 900px;
   border: 3px solid #902302;
   border-style: double;
+  background: whitesmoke;
 `;
 
 const ContactSubContainerColumnOne = styled.div`

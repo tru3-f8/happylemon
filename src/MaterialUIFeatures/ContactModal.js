@@ -1,6 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Modal from '@material-ui/core/Modal';
+import ContactButton from '../MaterialUIFeatures/ContactButton';
 
 function rand() {
   return Math.round(Math.random() * 20) - 10;
@@ -44,19 +45,18 @@ export default function SimpleModal() {
 
   const body = (
     <div style={modalStyle} className={classes.paper}>
-      <h2 id="simple-modal-title">Text in a modal</h2>
+      <h2 id="simple-modal-title">Message Submitted</h2>
       <p id="simple-modal-description">
-        Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
+        Thank you for contacting us!
       </p>
-      <SimpleModal />
     </div>
   );
 
   return (
     <div>
-      <button type="button" onClick={handleOpen}>
-        Open Modal
-      </button>
+      <div onClick={handleOpen}>
+      <ContactButton />
+      </div>
       <Modal
         open={open}
         onClose={handleClose}

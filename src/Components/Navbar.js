@@ -23,7 +23,7 @@ function Navbar() {
           <NavbarListItem to='menu' onClick={setNavBackground}>
             Menu
           </NavbarListItem>
-          <NavbarListItem>Location</NavbarListItem>
+          <NavbarListItem to='location' onClick={setNavBackground}>Location</NavbarListItem>
           <NavbarListItem to='/'>
             <NavbarImage src='images/happy_lemon_logo.jpeg' />
           </NavbarListItem>
