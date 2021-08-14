@@ -37,7 +37,7 @@ function Location() {
               <LocationButton>
                 <DirectionButton convoy={convoy} />
               </LocationButton>
-              <LocationAreaPnArea>(858) 430-6800</LocationAreaPnArea>
+              <LocationAreaPhone>(858) 430-6800</LocationAreaPhone>
               <LocationAreaSchedule>
                 <LocationAreaDays>Monday - Thursday:</LocationAreaDays>
                 <LocationAreaTime>11:00am - 11:00pm</LocationAreaTime>
@@ -58,7 +58,7 @@ function Location() {
               <LocationButton>
                 <DirectionButton caminoReal={caminoReal} />
               </LocationButton>
-              <LocationAreaPnArea>(858) 925-7052</LocationAreaPnArea>
+              <LocationAreaPhone>(858) 925-7052</LocationAreaPhone>
               <LocationAreaSchedule>
                 <LocationAreaDays>Monday - Thursday:</LocationAreaDays>
                 <LocationAreaTime>11:00am - 11:00pm</LocationAreaTime>
@@ -79,7 +79,7 @@ function Location() {
               <LocationButton>
                 <DirectionButton eastlake={eastlake} />
               </LocationButton>
-              <LocationAreaPnArea>(619) 600-3680</LocationAreaPnArea>
+              <LocationAreaPhone>(619) 600-3680</LocationAreaPhone>
               <LocationAreaSchedule>
                 <LocationAreaDays>Monday - Thursday:</LocationAreaDays>
                 <LocationAreaTime>11:00am - 11:00pm</LocationAreaTime>
@@ -119,7 +119,7 @@ const LocationBackground = styled.img`
 
 const LocationBackgroundVideo = styled.video`
   height: 500px;
-  min-width: 900px;
+  min-width: 600px;
   object-fit: cover;
 `;
 
@@ -145,6 +145,7 @@ const LocationSubContainerLeft = styled.div`
 
 const LocationArea = styled.div`
   padding-bottom: 30px;
+  border-bottom: 2px solid whitesmoke;
 `;
 
 const LocationAreaTitle = styled.h3`
@@ -165,7 +166,7 @@ const LocationButton = styled.div`
   margin: 30px 0;
 `;
 
-const LocationAreaPnArea = styled.p`
+const LocationAreaPhone = styled.p`
   color: #0a4f8a;
 `;
 

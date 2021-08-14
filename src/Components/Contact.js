@@ -106,6 +106,7 @@ const ContactName = styled.input`
   height: 30px;
   border-radius: 5px;
   border: 2px solid gray;
+  text-indent: 5px;
 `;
 
 const ContactEmail = styled.input`
@@ -114,6 +115,7 @@ const ContactEmail = styled.input`
   height: 30px;
   border-radius: 5px;
   border: 2px solid gray;
+  text-indent: 5px;
 `;
 
 const ContactPhone = styled.input`
@@ -122,6 +124,7 @@ const ContactPhone = styled.input`
   height: 30px;
   border-radius: 5px;
   border: 2px solid gray;
+  text-indent: 5px;
 `;
 
 const ContactMessage = styled(TextareaAutosize)`
@@ -131,6 +134,7 @@ const ContactMessage = styled(TextareaAutosize)`
   border-radius: 5px;
   border: 2px solid gray;
   font-family: Questrial;
+  text-indent: 5px;
 `;
 
 const ContactSendMessage = styled.button``;
