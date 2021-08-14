@@ -61,6 +61,7 @@ const FooterBox = styled.div`
 
 const FooterLocationColumns = styled.div`
   color: #fff;
+  margin-right: 30px;
 `;
 
 const FooterImage = styled.img`
