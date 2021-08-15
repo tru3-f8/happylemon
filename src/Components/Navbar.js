@@ -2,12 +2,16 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
-import { selectNavbarBackground, setNavbarBackground } from '../features/navbarBackgroundSlice';
+import {
+  selectNavbarBackground,
+  setNavbarBackground,
+} from '../features/navbarBackgroundSlice';
+import HamburgerIcon from '../MaterialUIFeatures/NavbarIcon';
 
 function Navbar() {
   const background = useSelector(selectNavbarBackground);
   const dispatch = useDispatch();
-  
+
   const setNavBackground = () => {
     dispatch(setNavbarBackground(false));
   };
@@ -18,17 +22,26 @@ function Navbar() {
 
   return (
     <NavbarContainer background={background}>
+      <NavbarHamburgerContainer>
+        <HamburgerIcon />
+      </NavbarHamburgerContainer>
       <NavbarListContainer>
         <NavbarList>
           <NavbarListItem to='menu' onClick={setNavBackground}>
             Menu
           </NavbarListItem>
-          <NavbarListItem to='location' onClick={setNavBackground}>Location</NavbarListItem>
+          <NavbarListItem to='location' onClick={setNavBackground}>
+            Location
+          </NavbarListItem>
           <NavbarListItem to='/'>
             <NavbarImage src='images/happy_lemon_logo.jpeg' />
           </NavbarListItem>
-          <NavbarListItem to='about' onClick={setNavBackground}>About</NavbarListItem>
-          <NavbarListItem to='contact' onClick={setNavBackground}>Contact</NavbarListItem>
+          <NavbarListItem to='about' onClick={setNavBackground}>
+            About
+          </NavbarListItem>
+          <NavbarListItem to='contact' onClick={setNavBackground}>
+            Contact
+          </NavbarListItem>
         </NavbarList>
       </NavbarListContainer>
     </NavbarContainer>
@@ -38,6 +51,7 @@ function Navbar() {
 export default Navbar;
 
 const NavbarContainer = styled.div`
+  display: flex;
   background: ${({ background }) => (background ? `#fff` : `rgb(254, 216, 0)`)};
   height: 110px;
   position: sticky;
@@ -47,6 +61,7 @@ const NavbarContainer = styled.div`
 `;
 
 const NavbarListContainer = styled.div`
+  display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
@@ -57,11 +72,25 @@ const NavbarListContainer = styled.div`
   }
 `;
 
+const NavbarHamburgerContainer = styled.div`
+  transform: translate(-10000px);
+  padding-top: 10px;
+  padding-left: 10px;
+
+  @media screen and (max-width: 700px) {
+    transform: translate(0px);
+  }
+`;
+
 const NavbarList = styled.div`
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   height: 100%;
+
+  @media screen and (max-width: 700px) {
+    display: none;
+  }
 `;
 
 const NavbarImage = styled.img`
