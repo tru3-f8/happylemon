@@ -1,7 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import TextareaAutosize from '@material-ui/core/TextareaAutosize';
-import ContactButton from '../MaterialUIFeatures/ContactButton';
 import ContactModal from '../MaterialUIFeatures/ContactModal';
 import { useDispatch, useSelector } from 'react-redux';
 import {
@@ -38,8 +37,16 @@ function Contact() {
             onChange={(e) => dispatch(setName(e.target.value))}
             placeholder='Name'
           />
-          <ContactEmail value={email} onChange={(e) => dispatch(setEmail(e.target.value))} placeholder='Email' />
-          <ContactPhone value={phone} onChange={(e) => dispatch(setPhone(e.target.value))} placeholder='Phone' />
+          <ContactEmail
+            value={email}
+            onChange={(e) => dispatch(setEmail(e.target.value))}
+            placeholder='Email'
+          />
+          <ContactPhone
+            value={phone}
+            onChange={(e) => dispatch(setPhone(e.target.value))}
+            placeholder='Phone'
+          />
           <ContactMessage
             value={message}
             onChange={(e) => dispatch(setMessage(e.target.value))}
@@ -136,5 +143,3 @@ const ContactMessage = styled(TextareaAutosize)`
   font-family: Questrial;
   text-indent: 5px;
 `;
-
-const ContactSendMessage = styled.button``;

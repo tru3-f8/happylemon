@@ -30,7 +30,8 @@ function Menu() {
 export default Menu;
 
 const MenuContainer = styled.div`
-  height: 565vh;
+  /* height: 565vh; */
+  height: 620vh;
 `;
 
 const MenuTitle = styled.h1`

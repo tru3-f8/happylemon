@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import ImageSection from './ImageSection';
 import SectionA from './SectionA';
 import SectionB from './SectionB';
@@ -7,18 +7,30 @@ import { setNavbarBackground } from '../features/navbarBackgroundSlice';
 
 
 function Main() {
-  const dispatch = useDispatch();
+  // const dispatch = useDispatch();
+ 
+  // const changeNav = () => {
+  //   if (window.scrollY >= 920) {
+  //     dispatch(setNavbarBackground(true))
+  //   } else {
+  //     dispatch(setNavbarBackground(false))
+  //   }
+  // };
 
-  useEffect(() => {
-    dispatch(setNavbarBackground(true))
-  }, [])
+  // useEffect(() => {
+  //   // dispatch(setNavbarBackground(false))
+
+  //   window.addEventListener("scroll", changeNav);
+
+  // }, [])
+
 
   return (
-    <div>
+    <>
       <ImageSection />
       <SectionA />
       <SectionB />
-    </div>
+    </>
   );
 }
 

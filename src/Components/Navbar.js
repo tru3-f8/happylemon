@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect } from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
@@ -16,17 +16,16 @@ function Navbar() {
     dispatch(setNavbarBackground(false));
   };
 
-  // const setNavDefaultBackground = () => {
-  //   dispatch(setNavbarBackground(true));
-  // };
 
   return (
     <NavbarContainer background={background}>
-      <NavbarHamburgerContainer>
-        <HamburgerIcon />
-      </NavbarHamburgerContainer>
+      <NavbarImageContainer>
+        <NavbarListItem to='/'>
+          <NavbarImage src='images/happy_lemon_logo.jpeg' />
+        </NavbarListItem>
+      </NavbarImageContainer>
       <NavbarListContainer>
-        <NavbarList>
+        <NavbarList> 
           <NavbarListItem to='menu' onClick={setNavBackground}>
             Menu
           </NavbarListItem>
@@ -44,6 +43,9 @@ function Navbar() {
           </NavbarListItem>
         </NavbarList>
       </NavbarListContainer>
+      <NavbarHamburgerContainer>
+        <HamburgerIcon />
+      </NavbarHamburgerContainer>
     </NavbarContainer>
   );
 }
@@ -60,6 +62,16 @@ const NavbarContainer = styled.div`
   text-transform: uppercase;
 `;
 
+const NavbarImageContainer = styled.div`
+  transform: translate(-10000px);
+  width: 30px;
+
+  @media screen and (max-width: 700px) {
+    transform: translate(0px);
+    margin-top: 6px;
+  }
+`;
+
 const NavbarListContainer = styled.div`
   display: flex;
   justify-content: center;
@@ -74,11 +86,16 @@ const NavbarListContainer = styled.div`
 
 const NavbarHamburgerContainer = styled.div`
   transform: translate(-10000px);
-  padding-top: 10px;
-  padding-left: 10px;
+  width: 30px;
 
   @media screen and (max-width: 700px) {
     transform: translate(0px);
+    padding-top: 30px;
+    padding-right: 30px;
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
   }
 `;
 

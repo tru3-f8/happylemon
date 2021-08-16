@@ -4,8 +4,6 @@ import { makeStyles } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
-import ListItemText from '@material-ui/core/ListItemText';
 import RoomIcon from '@material-ui/icons/Room';
 import InfoIcon from '@material-ui/icons/Info';
 import RecentActorsIcon from '@material-ui/icons/RecentActors';
@@ -16,8 +14,7 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { setNavbarBackground } from '../features/navbarBackgroundSlice';
 import { useDispatch } from 'react-redux';
-import { red } from '@material-ui/core/colors';
-import { RedeemOutlined } from '@material-ui/icons';
+
 
 const useStyles = makeStyles({
   list: {
@@ -155,7 +152,8 @@ const NavbarContainer = styled.div`
   background: rgb(254, 216, 0);
 `;
 
-const NavbarIcon = styled(MenuIcon)``;
+const NavbarIcon = styled(MenuIcon)`
+`;
 
 const NavbarTitleContainer = styled(Link)`
   display: flex;
@@ -164,8 +162,6 @@ const NavbarTitleContainer = styled(Link)`
   margin-bottom: 50px;
   padding: 7px 30px;
 `;
-
-const NavbarTitle = styled.h2``;
 
 const NavbarHome = styled(Link)`
   color: #555;

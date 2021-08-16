@@ -16,7 +16,7 @@ function Location() {
           autoPlay={true}
           loop={true}
           playsInline={true}
-          muted={false}
+          muted={true}
           controls={true}
         >
           <LocationBackgroundSource src='images/happy_lemon_location_video_two.mp4' />

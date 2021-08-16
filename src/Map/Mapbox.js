@@ -1,7 +1,6 @@
-import React, { useRef, useEffect, useState } from 'react';
+import React, { useRef, useEffect } from 'react';
 import styled from 'styled-components';
 import mapboxgl from 'mapbox-gl';
-import ReactMapGL from 'react-map-gl';
 import 'mapbox-gl/dist/mapbox-gl.css';
 
 function Mapbox() {
@@ -10,9 +9,9 @@ function Mapbox() {
 
   const mapContainer = useRef(null);
   const map = useRef(null);
-  const [lng, setLng] = useState(-70.9);
-  const [lat, setLat] = useState(42.35);
-  const [zoom, setZoom] = useState(9);
+  // const [lng, setLng] = useState(-70.9);
+  // const [lat, setLat] = useState(42.35);
+  // const [zoom, setZoom] = useState(9);
 
   useEffect(() => {
     if (map.current) return;

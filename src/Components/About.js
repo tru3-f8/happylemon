@@ -51,7 +51,9 @@ const AboutSubContainer = styled.div`
   margin-left: 150px;
 `;
 
-const AboutTitle = styled.h1``;
+const AboutTitle = styled.h1`
+  color: #902302;
+`;
 
 const AboutContent = styled.p`
   text-indent: 20px;
