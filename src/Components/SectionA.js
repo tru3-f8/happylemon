@@ -26,8 +26,14 @@ const SectionATitleOne = styled.h1`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 75px;
   color: #902302;
+  width: 100%;
+  padding-top: 75px;
+
+  @media screen and (max-width: 520px) {
+   font-size: 30px;
+  }
+
 `;
 
 const SectionATitleTwo = styled.h1`
@@ -35,10 +41,28 @@ const SectionATitleTwo = styled.h1`
   justify-content: center;
   align-items: center;
   color: #902302;
+  width: 100%;
+
+  @media screen and (max-width: 520px) {
+   font-size: 30px;
+  }
+
 `;
 
 const SectionADescription = styled.p`
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  padding: 0 15px;
+
+  @media screen and (max-width: 1120px) {
+   width: 98%;
+  }
+
+  @media screen and (max-width: 520px) {
+   font-size: 14px;
+  }
+
 `;
+

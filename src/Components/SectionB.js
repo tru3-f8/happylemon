@@ -28,7 +28,12 @@ export default SectionB;
 
 const SectionBContainer = styled.div`
   height: 1600px;
+  width: 100vw;
   background: rgb(254, 216, 0);
+ 
+  @media screen and (max-width: 700px) {
+
+  }
 `;
 
 const SectionBSubContainer = styled.div`

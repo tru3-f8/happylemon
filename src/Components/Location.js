@@ -104,6 +104,7 @@ export default Location;
 
 const LocationContainer = styled.div`
   height: 100vh;
+  overflow-x: hidden; 
 `;
 
 const LocationBackgroundContainer = styled.div`
@@ -136,11 +137,11 @@ const LocationSubContainer = styled.div`
 `;
 
 const LocationSubContainerLeft = styled.div`
-  height: 35vh;
+  height: 37vh;
   width: 600px;
   overflow-y: scroll;
   margin: 0 20px;
-  margin-top: 48px;
+  margin-top: 68px;
 `;
 
 const LocationArea = styled.div`
@@ -183,5 +184,7 @@ const LocationSubContainerRight = styled.div`
 `;
 
 const LocationTitle = styled.h1`
+  font-size: 35px;
   color: #902302;
+  margin-bottom: 35px;
 `;

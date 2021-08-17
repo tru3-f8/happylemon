@@ -47,7 +47,7 @@ const AboutSubContainer = styled.div`
   flex-direction: column;
   align-items: center;
   width: 800px;
-  padding-top: 180px;
+  padding-top: 140px;
   margin-left: 150px;
 `;
 

@@ -12,10 +12,10 @@ function Navbar() {
   const background = useSelector(selectNavbarBackground);
   const dispatch = useDispatch();
 
+
   const setNavBackground = () => {
     dispatch(setNavbarBackground(false));
   };
-
 
   return (
     <NavbarContainer background={background}>
@@ -54,7 +54,7 @@ export default Navbar;
 
 const NavbarContainer = styled.div`
   display: flex;
-  background: ${({ background }) => (background ? `#fff` : `rgb(254, 216, 0)`)};
+  background: ${({ background }) => (background ? '#fff' : 'rgb(254, 216, 0)')};
   height: 110px;
   position: sticky;
   z-index: 10;

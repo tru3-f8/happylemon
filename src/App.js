@@ -8,13 +8,13 @@ import Main from './Components/Main';
 import About from './Components/About';
 import Contact from './Components/Contact';
 import Location from './Components/Location';
-
+import styled from 'styled-components';
 
 function App() {
   return (
     <Router>
-      <>
-      <Navbar />
+      <AppContainer>
+        <Navbar />
         <Switch>
           <Route path exact='/'>
             <Main />
@@ -33,9 +33,13 @@ function App() {
           </Route>
         </Switch>
         <Footer />
-      </>
+      </AppContainer>
     </Router>
   );
 }
 
 export default App;
+
+const AppContainer = styled.div`
+  overflow-x: hidden;
+`;
