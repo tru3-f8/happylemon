@@ -33,7 +33,7 @@ export default About;
 const AboutContainer = styled.div`
   display: flex;
   justify-content: center;
-  height: 70vh;
+  height: 800px;
 `;
 
 const AboutImage = styled.img`

@@ -34,5 +34,6 @@ function Main() {
 
 export default Main;
 
-const MainContainer = styled.div``;
-
+const MainContainer = styled.div`
+  overflow-x: hidden;
+`;

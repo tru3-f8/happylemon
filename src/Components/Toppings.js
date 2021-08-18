@@ -55,6 +55,7 @@ export default Toppings;
 
 const ToppingsContainer = styled.div`
   margin-top: 100px;
+  margin-bottom: 130px;
 `;
 
 const ToppingsTitle = styled.h1`

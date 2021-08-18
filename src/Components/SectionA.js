@@ -20,6 +20,7 @@ export default SectionA;
 const SectionAContainer = styled.div`
   height: 300px;
   background: rgb(254, 216, 0);
+
 `;
 
 const SectionATitleOne = styled.h1`

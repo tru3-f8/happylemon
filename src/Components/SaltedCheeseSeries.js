@@ -57,6 +57,7 @@ export default SaltedCheeseSeries;
 
 const SaltedCheeseSeriesContainer = styled.div`
   margin-top: 100px;
+  overflow: hidden;
 `;
 
 const SaltedCheeseSeriesTitle = styled.h1`

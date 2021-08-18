@@ -103,8 +103,8 @@ function Location() {
 export default Location;
 
 const LocationContainer = styled.div`
-  height: 100vh;
-  overflow-x: hidden; 
+  height: 1200px;
+  overflow: hidden; 
 `;
 
 const LocationBackgroundContainer = styled.div`
@@ -141,7 +141,7 @@ const LocationSubContainerLeft = styled.div`
   width: 600px;
   overflow-y: scroll;
   margin: 0 20px;
-  margin-top: 68px;
+  margin-top: 95px;
 `;
 
 const LocationArea = styled.div`
@@ -180,7 +180,7 @@ const LocationAreaDays = styled.p``;
 const LocationAreaTime = styled.p``;
 
 const LocationSubContainerRight = styled.div`
-  margin: 0 20px;
+  margin: 30px 20px;
 `;
 
 const LocationTitle = styled.h1`

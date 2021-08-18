@@ -17,4 +17,5 @@ const ImageSectionContainer = styled.div`
   justify-content: center;
   align-items: center;
   height: 900px;
+  
 `;

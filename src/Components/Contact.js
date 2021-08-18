@@ -66,7 +66,7 @@ const ContactContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80vh;
+  height: 800px;
 `;
 
 const ContactContainerBox = styled.div`
@@ -74,7 +74,7 @@ const ContactContainerBox = styled.div`
   flex: 0.5;
   justify-content: space-evenly;
   height: 500px;
-  width: 900px;
+  max-width: 900px;
   border: 3px solid #902302;
   border-style: double;
   background: whitesmoke;

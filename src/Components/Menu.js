@@ -29,9 +29,7 @@ function Menu() {
 
 export default Menu;
 
-const MenuContainer = styled.div`
-  height: 590vh;
-`;
+const MenuContainer = styled.div``;
 
 const MenuTitle = styled.h1`
   display: flex;
