@@ -10,7 +10,9 @@ function ClassicSeries() {
   return (
     <ClassicSeriesContainer id='classic'>
       <ClassicSeriesSubContainer>
-        <ClassicSeriesTitle onClick={scrollToTop}>Classic Series</ClassicSeriesTitle>
+        <ClassicSeriesTitle onClick={scrollToTop}>
+          Classic Series
+        </ClassicSeriesTitle>
         <ClassicSeriesListContainer>
           <ClassicSeriesList>
             <ClassicSeriesItems>
@@ -91,20 +93,52 @@ const ClassicSeriesSubContainer = styled.div`
   align-items: center;
   margin: 0 auto;
   background: #fff;
+
+  @media screen and (max-width: 1300px) {
+    width: 90%;
+  }
+
+  @media screen and (max-width: 900px) {
+    height: 2000px;
+    width: 80%;
+  }
+
 `;
 
 const ClassicSeriesListContainer = styled.div`
   display: flex;
   justify-content: space-evenly;
   padding: 50px 50px;
+
+  @media screen and (max-width: 900px) {
+    display: flex;
+    flex-direction: column;
+  }
+
 `;
 
-const ClassicSeriesList = styled.div``;
+const ClassicSeriesList = styled.div`
+  
+`;
 
 const ClassicSeriesItems = styled.div`
   display: flex;
   flex-direction: row;
   padding: 10px 60px;
+
+  @media screen and (max-width: 1300px) {
+    width: 300px;
+  }
+
+  @media screen and (max-width: 900px) {
+    width: 450px;
+    justify-content: center;
+  }
+
+  @media screen and (max-width: 300px) {
+    display: flex;
+    flex-direction: column;
+  }
 `;
 
 const ClassicSeriesImage = styled.img`
@@ -112,6 +146,11 @@ const ClassicSeriesImage = styled.img`
   width: 170px;
   height: 170px;
   border-bottom: 1px solid #e8e8e8;
+
+  @media screen and (max-width: 900px) {
+    border-bottom: none;
+  }
+
 `;
 
 const ClassicSeriesItem = styled.div`
@@ -124,4 +163,10 @@ const ClassicSeriesItem = styled.div`
   font-weight: normal;
   font-family: 'Righteous';
   font-size: 20px;
+
+  @media screen and (max-width: 900px) {
+    padding-bottom: 15px;
+    width: 200px;
+  }
+
 `;
