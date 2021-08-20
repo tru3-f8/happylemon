@@ -88,19 +88,19 @@ const ClassicSeriesTitle = styled.h1`
 const ClassicSeriesSubContainer = styled.div`
   height: 1220px;
   width: 1200px;
+  max-width: 90%;
   border: 5px double rgb(144, 35, 2);
   justify-content: center;
   align-items: center;
   margin: 0 auto;
   background: #fff;
 
-  @media screen and (max-width: 1300px) {
-    width: 90%;
-  }
-
   @media screen and (max-width: 900px) {
     height: 2000px;
-    width: 80%;
+  }
+
+  @media screen and (max-width: 600px) {
+    height: 2550px;
   }
 
 `;
@@ -117,9 +117,7 @@ const ClassicSeriesListContainer = styled.div`
 
 `;
 
-const ClassicSeriesList = styled.div`
-  
-`;
+const ClassicSeriesList = styled.div``;
 
 const ClassicSeriesItems = styled.div`
   display: flex;
@@ -131,14 +129,17 @@ const ClassicSeriesItems = styled.div`
   }
 
   @media screen and (max-width: 900px) {
-    width: 450px;
+    width: 400px;
+  }
+
+  @media screen and (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    max-width: 90%;
     justify-content: center;
   }
 
-  @media screen and (max-width: 300px) {
-    display: flex;
-    flex-direction: column;
-  }
 `;
 
 const ClassicSeriesImage = styled.img`
@@ -150,7 +151,6 @@ const ClassicSeriesImage = styled.img`
   @media screen and (max-width: 900px) {
     border-bottom: none;
   }
-
 `;
 
 const ClassicSeriesItem = styled.div`
@@ -166,7 +166,9 @@ const ClassicSeriesItem = styled.div`
 
   @media screen and (max-width: 900px) {
     padding-bottom: 15px;
-    width: 200px;
   }
 
+  @media screen and (max-width: 600px) {
+    width: 200px;
+  }
 `;
