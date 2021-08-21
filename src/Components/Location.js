@@ -12,7 +12,7 @@ function Location() {
     <LocationContainer>
       <LocationBackgroundContainer>
         <LocationBackground src='images/happy_lemon_location_three.jpeg' />
-        <LocationBackgroundVideo
+        {/* <LocationBackgroundVideo
           autoPlay={true}
           loop={true}
           playsInline={true}
@@ -20,8 +20,8 @@ function Location() {
           controls={true}
         >
           <LocationBackgroundSource src='images/happy_lemon_location_video_two.mp4' />
-        </LocationBackgroundVideo>
-        <LocationBackground src='images/happy_lemon_location_two.jpeg' />
+        </LocationBackgroundVideo> */}
+        {/* <LocationBackground src='images/happy_lemon_location_two.jpeg' /> */}
       </LocationBackgroundContainer>
       <LocationContainerTwo>
         <LocationSubContainer>
@@ -109,18 +109,33 @@ const LocationContainer = styled.div`
 
 const LocationBackgroundContainer = styled.div`
   display: flex;
+  justify-content: center;
   margin-bottom: 40px;
 `;
 
 const LocationBackground = styled.img`
   height: 500px;
-  width: 100%;
+  width: 1300px;
   object-fit: cover;
+
+
+  @media screen and (max-width: 2000px) {
+ 
+  }
+
+  @media screen and (max-width: 900px) {
+    
+  }
+
+  @media screen and (max-width: 600px) {
+
+  }
+
 `;
 
 const LocationBackgroundVideo = styled.video`
   height: 500px;
-  min-width: 600px;
+  width: 700px;
   object-fit: cover;
 `;
 

@@ -96,11 +96,11 @@ const ClassicSeriesSubContainer = styled.div`
   background: #fff;
 
   @media screen and (max-width: 900px) {
-    height: 2000px;
+    height: 1990px;
   }
 
   @media screen and (max-width: 600px) {
-    height: 2550px;
+    height: 2530px;
   }
 
 `;

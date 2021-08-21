@@ -60,19 +60,42 @@ const SnackTitle = styled.h1`
 `;
 
 const SnackSubContainer = styled.div`
-  height: 610px;
+  height: 670px;
   width: 1200px;
+  max-width: 90%;
   border: 5px double rgb(144, 35, 2);
   justify-content: center;
   align-items: center;
   margin: 0 auto;
   background: #fff;
+
+  @media screen and (max-width: 900px) {
+    height: 1100px;
+  }
+
+  @media screen and (max-width: 600px) {
+    height: 1305px;
+  }
+
 `;
 
 const SnackListContainer = styled.div`
   display: flex;
   justify-content: space-evenly;
   padding: 50px 50px;
+
+  @media screen and (max-width: 900px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media screen and (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+    padding-left: 250px;
+  }
+
 `;
 
 const SnackList = styled.div``;
@@ -81,6 +104,32 @@ const SnackItems = styled.div`
   display: flex;
   flex-direction: row;
   padding: 10px 60px;
+  margin-bottom: 50px;
+
+
+  @media screen and (max-width: 1300px) {
+    width: 300px;
+    margin-bottom: 45px;
+  }
+
+  @media screen and (max-width: 900px) {
+    width: 400px;
+  }
+
+  @media screen and (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    max-width: 90%;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+
+  @media screen and (max-width: 414px) {
+    margin-right: 25px;
+  }
+
 `;
 
 const SnackImage = styled.img`
@@ -90,6 +139,13 @@ const SnackImage = styled.img`
   border-bottom: 1px solid #e8e8e8;
   border-radius: 5%;
   margin-bottom: 20px;
+
+
+  @media screen and (max-width: 900px) {
+    border-bottom: none;
+    margin-left: 50px;
+  }
+
 `;
 
 const SnackItem = styled.div`
@@ -104,4 +160,14 @@ const SnackItem = styled.div`
   font-family: 'Righteous';
   font-size: 20px;
   margin-left: 15px;
+
+
+  @media screen and (max-width: 900px) {
+    padding-bottom: 15px;
+  }
+
+  @media screen and (max-width: 600px) {
+    width: 200px;
+  }
+
 `;

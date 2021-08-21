@@ -73,19 +73,43 @@ const ToppingsTitle = styled.h1`
 `;
 
 const ToppingsSubContainer = styled.div`
-  height: 955px;
+  height: 1110px;
   width: 1200px;
+  max-width: 90%;
   border: 5px double rgb(144, 35, 2);
   justify-content: center;
   align-items: center;
   margin: 0 auto;
   background: #fff;
+
+  @media screen and (max-width: 900px) {
+    height: 1770px;
+  }
+
+  @media screen and (max-width: 600px) {
+    height: 1955px;
+  }
+
 `;
 
 const ToppingsListContainer = styled.div`
   display: flex;
   justify-content: space-evenly;
   padding: 50px 50px;
+
+
+  @media screen and (max-width: 900px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media screen and (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+    padding-left: 250px;
+  }
+
 `;
 
 const ToppingsList = styled.div``;
@@ -94,6 +118,29 @@ const ToppingsItems = styled.div`
   display: flex;
   flex-direction: row;
   padding: 10px 60px;
+  margin-bottom: 50px;
+
+  @media screen and (max-width: 1300px) {
+    width: 300px;
+  }
+
+  @media screen and (max-width: 900px) {
+    width: 400px;
+  }
+
+  @media screen and (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    max-width: 90%;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  @media screen and (max-width: 414px) {
+    margin-right: 25px;
+  }
+
 `;
 
 const ToppingsImage = styled.img`
@@ -103,6 +150,12 @@ const ToppingsImage = styled.img`
   border-bottom: 1px solid #e8e8e8;
   border-radius: 5%;
   margin-bottom: 20px;
+
+  @media screen and (max-width: 900px) {
+    border-bottom: none;
+    margin-left: 50px;
+  }
+
 `;
 
 const ToppingsItem = styled.div`
@@ -117,4 +170,14 @@ const ToppingsItem = styled.div`
   font-family: 'Righteous';
   font-size: 20px;
   margin-left: 15px;
+
+  @media screen and (max-width: 900px) {
+    padding-bottom: 15px;
+  }
+
+  @media screen and (max-width: 600px) {
+    width: 200px;
+    margin-left: 30px;
+  }
+
 `;

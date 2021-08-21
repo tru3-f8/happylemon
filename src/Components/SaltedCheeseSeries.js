@@ -77,17 +77,42 @@ const SaltedCheeseSeriesTitle = styled.h1`
 const SaltedCheeseSeriesSubContainer = styled.div`
   height: 840px;
   width: 1200px;
+  max-width: 90%;
   border: 5px double rgb(144, 35, 2);
   justify-content: center;
   align-items: center;
   margin: 0 auto;
   background: #fff;
+
+
+  @media screen and (max-width: 900px) {
+    height: 1235px;
+  }
+
+  @media screen and (max-width: 600px) {
+    height: 1640px;
+  }
+
+
 `;
 
 const SaltedCheeseSeriesListContainer = styled.div`
   display: flex;
   justify-content: space-evenly;
   padding: 50px 50px;
+
+  @media screen and (max-width: 900px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media screen and (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+    padding-left: 250px;
+  }
+
 `;
 
 const SaltedCheeseSeriesList = styled.div``;
@@ -96,6 +121,24 @@ const SaltedCheeseSeriesItems = styled.div`
   display: flex;
   flex-direction: row;
   padding: 10px 60px;
+
+
+  @media screen and (max-width: 1300px) {
+    width: 300px;
+  }
+
+  @media screen and (max-width: 900px) {
+    width: 400px;
+  }
+
+  @media screen and (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    max-width: 90%;
+    justify-content: center;
+  }
+
 `;
 
 const SaltedCheeseSeriesImage = styled.img`
@@ -103,6 +146,11 @@ const SaltedCheeseSeriesImage = styled.img`
   width: 170px;
   height: 170px;
   border-bottom: 1px solid #e8e8e8;
+
+  @media screen and (max-width: 900px) {
+    border-bottom: none;
+  }
+
 `;
 
 const SaltedCheeseSeriesItem = styled.div`
@@ -115,4 +163,13 @@ const SaltedCheeseSeriesItem = styled.div`
   font-weight: normal;
   font-family: 'Righteous';
   font-size: 20px;
+
+  @media screen and (max-width: 900px) {
+    padding-bottom: 15px;
+  }
+
+  @media screen and (max-width: 600px) {
+    width: 200px;
+  }
+
 `;

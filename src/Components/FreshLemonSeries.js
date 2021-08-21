@@ -64,17 +64,40 @@ const FreshLemonSeriesTitle = styled.h1`
 const FreshLemonSeriesSubContainer = styled.div`
   height: 650px;
   width: 1200px;
+  max-width: 90%;
   border: 5px double rgb(144, 35, 2);
   justify-content: center;
   align-items: center;
   margin: 0 auto;
   background: #fff;
+
+  @media screen and (max-width: 900px) {
+    height: 850px;
+  }
+
+  @media screen and (max-width: 600px) {
+    height: 1095px;
+  }
+
 `;
 
 const FreshLemonSeriesListContainer = styled.div`
   display: flex;
   justify-content: space-evenly;
   padding: 50px 50px;
+
+  @media screen and (max-width: 900px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media screen and (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+    padding-left: 250px;
+  }
+
 `;
 
 const FreshLemonSeriesList = styled.div``;
@@ -83,6 +106,24 @@ const FreshLemonSeriesItems = styled.div`
   display: flex;
   flex-direction: row;
   padding: 10px 60px;
+
+
+  @media screen and (max-width: 1300px) {
+    width: 300px;
+  }
+
+  @media screen and (max-width: 900px) {
+    width: 400px;
+  }
+
+  @media screen and (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    max-width: 90%;
+    justify-content: center;
+  }
+
 `;
 
 const FreshLemonSeriesImage = styled.img`
@@ -90,6 +131,12 @@ const FreshLemonSeriesImage = styled.img`
   width: 170px;
   height: 170px;
   border-bottom: 1px solid #e8e8e8;
+
+
+  @media screen and (max-width: 900px) {
+    border-bottom: none;
+  }
+
 `;
 
 const FreshLemonSeriesItem = styled.div`
@@ -102,4 +149,13 @@ const FreshLemonSeriesItem = styled.div`
   font-weight: normal;
   font-family: 'Righteous';
   font-size: 20px;
+
+  @media screen and (max-width: 900px) {
+    padding-bottom: 15px;
+  }
+
+  @media screen and (max-width: 600px) {
+    width: 200px;
+  }
+
 `;
