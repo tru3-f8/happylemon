@@ -113,6 +113,13 @@ const ClassicSeriesListContainer = styled.div`
   @media screen and (max-width: 900px) {
     display: flex;
     flex-direction: column;
+    align-items: center;
+  }
+
+  @media screen and (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+    padding-left: 250px;
   }
 
 `;
