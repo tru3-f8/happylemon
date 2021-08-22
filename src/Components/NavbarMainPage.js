@@ -2,14 +2,11 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
-import {
-  selectNavbarBackground,
-  setNavbarBackground,
-} from '../features/navbarBackgroundSlice';
+import { selectNavbarMainPageBackground, setNavbarBackground } from '../features/navbarBackgroundSlice';
 import HamburgerIcon from '../MaterialUIFeatures/NavbarIcon';
 
-function Navbar() {
-  const background = useSelector(selectNavbarBackground);
+function NavbarMainPage() {
+  const navbarMainPageBackground = useSelector(selectNavbarMainPageBackground);
   const dispatch = useDispatch();
 
 
@@ -20,6 +17,7 @@ function Navbar() {
       top: 0
     });
 
+    console.log('test')
   };
 
   const scrollToTop = () => {
@@ -28,9 +26,8 @@ function Navbar() {
     });
   }
 
-
   return (
-    <NavbarContainer background={background}>
+    <NavbarContainer background={navbarMainPageBackground}>
       <NavbarImageContainer>
         <NavbarListItem to='/' onClick={scrollToTop}>
           <NavbarImage src='images/happy_lemon_logo.jpeg'/>
@@ -44,8 +41,8 @@ function Navbar() {
           <NavbarListItem to='location' onClick={setNavBackground}>
             Location
           </NavbarListItem>
-          <NavbarListItem to='/'>
-            <NavbarImage src='images/happy_lemon_logo.jpeg' onClick={scrollToTop}/>
+          <NavbarListItem to='/' onClick={scrollToTop}>
+            <NavbarImage src='images/happy_lemon_logo.jpeg' />
           </NavbarListItem>
           <NavbarListItem to='about' onClick={setNavBackground}>
             About
@@ -62,7 +59,7 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default NavbarMainPage;
 
 const NavbarContainer = styled.div`
   display: flex;

@@ -3,7 +3,7 @@ import { useDispatch } from 'react-redux';
 import ImageSection from './ImageSection';
 import SectionA from './SectionA';
 import SectionB from './SectionB';
-import { setNavbarBackground } from '../features/navbarBackgroundSlice';
+import { setNavbarMainPageBackground } from '../features/navbarBackgroundSlice';
 import styled from 'styled-components';
 
 function Main() {
@@ -11,9 +11,9 @@ function Main() {
 
   const changeNav = () => {
     if (window.scrollY >= 920) {
-      dispatch(setNavbarBackground(false));
+      dispatch(setNavbarMainPageBackground(true));
     } else {
-      dispatch(setNavbarBackground(false));
+      dispatch(setNavbarMainPageBackground(false));
     }
   };
 

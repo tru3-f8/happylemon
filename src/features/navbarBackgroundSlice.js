@@ -4,25 +4,25 @@ export const navbarBackgroundSlice = createSlice({
     name: 'navbarBackground',
     initialState: {
         navbarBackground: false,
-        test: false,
+        navbarMainPageBackground: false,
     },
     reducers: {
         setNavbarBackground: (state, action) => {
             state.navbarBackground = action.payload;
         },
-        setTest: (state, action) => {
-            state.test = action.payload;
+        setNavbarMainPageBackground: (state, action) => {
+            state.navbarMainPageBackground = action.payload;
 
         }
     }
 })
 
 
-export const { setNavbarBackground, setTest } = navbarBackgroundSlice.actions;
+export const { setNavbarBackground, setNavbarMainPageBackground } = navbarBackgroundSlice.actions;
 
 export const selectNavbarBackground = (state) => state.navbarBackground.navbarBackground; 
 
-export const selectTest = (state) => state.navbarBackground.test;
+export const selectNavbarMainPageBackground = (state) => state.navbarBackground.navbarMainPageBackground;
 
 
 export default navbarBackgroundSlice.reducer;

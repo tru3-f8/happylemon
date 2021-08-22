@@ -9,8 +9,9 @@ import Snack from './Snack';
 import Toppings from './Toppings';
 import MenuButton from '../MaterialUIFeatures/MenuButton';
 
-
 function Menu() {
+ 
+
   return (
     <MenuContainer>
       <MenuTitle>
@@ -29,7 +30,9 @@ function Menu() {
 
 export default Menu;
 
-const MenuContainer = styled.div``;
+const MenuContainer = styled.div`
+  overflow: hidden;
+`;
 
 const MenuTitle = styled.h1`
   display: flex;
@@ -38,4 +41,3 @@ const MenuTitle = styled.h1`
   padding-top: 100px;
   margin-bottom: 80px;
 `;
-

@@ -34,16 +34,24 @@ function Mapbox() {
 
 export default Mapbox;
 
-const MapboxContainer = styled.div`
-`;
+const MapboxContainer = styled.div``;
 
 const MapboxSubContainer = styled.div`
   height: 400px;
   width: 700px;
-`
+`;
 
 const MapboxMap = styled.div`
   height: 400px;
   width: 700px;
   object-fit: cover;
+
+  @media screen and (max-width: 900px) {
+    height: 300px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
 `;

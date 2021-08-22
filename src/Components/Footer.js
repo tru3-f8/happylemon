@@ -62,8 +62,12 @@ const FooterContainer = styled.div`
   overflow: hidden;
 
   @media screen and (max-width: 1200px) {
-    height: 700px;
-}
+    height: 780px;
+  }
+
+  @media screen and (max-width: 730px) {
+    height: 400px;
+  }
 
 `;
 
@@ -77,8 +81,7 @@ const FooterSubContainer = styled.div`
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
-}
-
+  }
 `;
 
 const FooterBox = styled.div`
@@ -94,7 +97,6 @@ const FooterBox = styled.div`
   @media screen and (max-width: 730px) {
     display: none;
   }
-
 `;
 
 const FooterLocationColumns = styled.div`
@@ -114,7 +116,6 @@ const FooterImage = styled.img`
   object-fit: contain;
   margin-top: 30px;
   margin-left: 50px;
-
 `;
 
 const FooterLocationHeader = styled.h3`

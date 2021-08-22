@@ -34,12 +34,43 @@ const AboutContainer = styled.div`
   display: flex;
   justify-content: center;
   height: 800px;
+  width: 1500px;
+  max-width: 100%;
+  margin: 0 auto;
+
+  @media screen and (max-width: 900px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 1100px;
+  }
+
+  @media screen and (max-width: 414px) {
+    margin-bottom: 50px;
+  }
+
 `;
 
 const AboutImage = styled.img`
-  max-width: 50%;
-  max-height: 50%;
+  height: 380px;
+  width: 350px;
   padding-top: 100px;
+
+  @media screen and (max-width: 1100px) {
+    padding-top: 180px;
+  }
+
+  @media screen and (max-width: 900px) {
+   padding-top: 0px;
+  }
+
+  @media screen and (max-width: 414px) {
+    height: 330px;
+    width: 300px;
+    margin-top: 35px;
+    margin-bottom: -90px;
+  }
+
 `;
 
 const AboutSubContainer = styled.div`
@@ -47,8 +78,15 @@ const AboutSubContainer = styled.div`
   flex-direction: column;
   align-items: center;
   width: 800px;
+  max-width: 100%;
   padding-top: 140px;
   margin-left: 150px;
+
+  @media screen and (max-width: 900px) {
+    width: 80%;
+    margin: 0 auto;
+  }
+
 `;
 
 const AboutTitle = styled.h1`
@@ -58,4 +96,5 @@ const AboutTitle = styled.h1`
 const AboutContent = styled.p`
   text-indent: 20px;
   line-height: 1.6;
+
 `;

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import Navbar from './Components/Navbar';
 import './App.css';
 import Menu from './Components/Menu';
@@ -9,26 +9,31 @@ import About from './Components/About';
 import Contact from './Components/Contact';
 import Location from './Components/Location';
 import styled from 'styled-components';
+import NavbarMainPage from './Components/NavbarMainPage';
 
 function App() {
   return (
     <Router>
       <AppContainer>
-        <Navbar />
         <Switch>
           <Route path exact='/'>
+            <NavbarMainPage />
             <Main />
           </Route>
           <Route path='/menu'>
+            <Navbar />
             <Menu />
           </Route>
           <Route path='/about'>
+            <Navbar />
             <About />
           </Route>
           <Route path='/contact'>
+            <Navbar />
             <Contact />
           </Route>
           <Route path='/location'>
+            <Navbar />
             <Location />
           </Route>
         </Switch>
@@ -41,5 +46,5 @@ function App() {
 export default App;
 
 const AppContainer = styled.div`
-  overflow: hidden;
+  
 `;

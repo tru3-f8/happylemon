@@ -11,7 +11,7 @@ function Location() {
   return (
     <LocationContainer>
       <LocationBackgroundContainer>
-        <LocationBackground src='images/happy_lemon_location_three.jpeg' />
+        <LocationBackground src='images/happy_lemon_logo3.png' />
         {/* <LocationBackgroundVideo
           autoPlay={true}
           loop={true}
@@ -104,31 +104,54 @@ export default Location;
 
 const LocationContainer = styled.div`
   height: 1200px;
-  overflow: hidden; 
+  overflow: hidden;
+
+  @media screen and (max-width: 1400px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 1650px;
+  }
+
+  @media screen and (max-width: 1100px) {
+    height: 1430px;
+  }
+
+  @media screen and (max-width: 900px) {
+    height: 1770px;
+  }
 `;
 
 const LocationBackgroundContainer = styled.div`
   display: flex;
   justify-content: center;
-  margin-bottom: 40px;
+  margin: 80px auto;
+  width: 700px;
+  max-width: 100%;
+  padding-bottom: 25px;
+  border-bottom: 5px double #902302;
+
+  @media screen and (max-width: 900px) {
+    width: 400px;
+  }
+
+  @media screen and (max-width: 414px) {
+    width: 350px;
+  }
+
 `;
 
 const LocationBackground = styled.img`
-  height: 500px;
-  width: 1300px;
-  object-fit: cover;
-
-
-  @media screen and (max-width: 2000px) {
- 
-  }
+  height: 300px;
+  width: 700px;
+  object-fit: contain;
 
   @media screen and (max-width: 900px) {
-    
+    width: 600px;
   }
 
-  @media screen and (max-width: 600px) {
-
+  @media screen and (max-width: 414px) {
+    width: 400px;
   }
 
 `;
@@ -149,19 +172,61 @@ const LocationContainerTwo = styled.div`
 
 const LocationSubContainer = styled.div`
   display: flex;
+
+  @media screen and (max-width: 1400px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
 const LocationSubContainerLeft = styled.div`
   height: 37vh;
-  width: 600px;
+  width: 400px;
   overflow-y: scroll;
   margin: 0 20px;
   margin-top: 95px;
+
+  @media screen and (max-width: 1400px) {
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+    max-width: 100%;
+    height: 530px;
+    overflow: hidden;
+    margin-top: 1px;
+    margin-bottom: 25px;
+  }
+
+  @media screen and (max-width: 1100px) {
+    width: 100%;
+    margin-bottom: -230px;
+  }
+
+  @media screen and (max-width: 900px) {
+    flex-direction: column;
+    width: 300px;
+    height: 800px;
+    margin-top: -55px;
+    margin-bottom: 100px;
+  }
 `;
 
 const LocationArea = styled.div`
   padding-bottom: 30px;
   border-bottom: 2px solid whitesmoke;
+
+  @media screen and (max-width: 1400px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 100px;
+    border-bottom: 3px double #902302;
+  }
+
+  @media screen and (max-width: 1100px) {
+    height: 150px;
+  }
 `;
 
 const LocationAreaTitle = styled.h3`
@@ -184,10 +249,18 @@ const LocationButton = styled.div`
 
 const LocationAreaPhone = styled.p`
   color: #0a4f8a;
+
+  @media screen and (max-width: 1100px) {
+    display: none;
+  }
 `;
 
 const LocationAreaSchedule = styled.div`
   line-height: 0.8;
+
+  @media screen and (max-width: 1100px) {
+    display: none;
+  }
 `;
 
 const LocationAreaDays = styled.p``;
@@ -196,10 +269,22 @@ const LocationAreaTime = styled.p``;
 
 const LocationSubContainerRight = styled.div`
   margin: 30px 20px;
+
+  @media screen and (max-width: 900px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -50px;
+  }
 `;
 
 const LocationTitle = styled.h1`
   font-size: 35px;
   color: #902302;
   margin-bottom: 35px;
+
+  @media screen and (max-width: 900px) {
+    font-size: 25px;
+  }
 `;
