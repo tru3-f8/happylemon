@@ -15,7 +15,6 @@ import styled from 'styled-components';
 import { setNavbarBackground } from '../features/navbarBackgroundSlice';
 import { useDispatch } from 'react-redux';
 
-
 const useStyles = makeStyles({
   list: {
     width: 400,
@@ -25,12 +24,16 @@ const useStyles = makeStyles({
   },
 });
 
-
 export default function TemporaryDrawer() {
   const dispatch = useDispatch();
 
   const setNavBackground = () => {
     dispatch(setNavbarBackground(false));
+
+    window.scrollTo({
+      top: 0,
+    });
+    
   };
 
   const classes = useStyles();
@@ -68,7 +71,6 @@ export default function TemporaryDrawer() {
 
         <List>
           <NavbarHome to='/' onClick={setNavBackground}>
-
             <NavbarListItem>
               <ListItem button>
                 <NavbarListItemIcon>
@@ -84,7 +86,9 @@ export default function TemporaryDrawer() {
           <NavbarMenu to='menu' onClick={setNavBackground}>
             <NavbarListItem>
               <ListItem button>
-                <NavbarListItemIcon><LabelImportantIcon fontSize='large' /></NavbarListItemIcon>
+                <NavbarListItemIcon>
+                  <LabelImportantIcon fontSize='large' />
+                </NavbarListItemIcon>
                 <NavbarListName>Menu</NavbarListName>
               </ListItem>
             </NavbarListItem>
@@ -95,7 +99,9 @@ export default function TemporaryDrawer() {
           <NavbarLocation to='location' onClick={setNavBackground}>
             <NavbarListItem>
               <ListItem button>
-                <NavbarListItemIcon><RoomIcon fontSize='large' /></NavbarListItemIcon>
+                <NavbarListItemIcon>
+                  <RoomIcon fontSize='large' />
+                </NavbarListItemIcon>
                 <NavbarListName>Location</NavbarListName>
               </ListItem>
             </NavbarListItem>
@@ -106,7 +112,9 @@ export default function TemporaryDrawer() {
           <NavbarAbout to='about' onClick={setNavBackground}>
             <NavbarListItem>
               <ListItem button>
-                <NavbarListItemIcon><InfoIcon fontSize='large' /></NavbarListItemIcon>
+                <NavbarListItemIcon>
+                  <InfoIcon fontSize='large' />
+                </NavbarListItemIcon>
                 <NavbarListName>About</NavbarListName>
               </ListItem>
             </NavbarListItem>
@@ -117,7 +125,9 @@ export default function TemporaryDrawer() {
           <NavbarContact to='contact' onClick={setNavBackground}>
             <NavbarListItem>
               <ListItem button>
-                <NavbarListItemIcon><RecentActorsIcon fontSize='large' /></NavbarListItemIcon>
+                <NavbarListItemIcon>
+                  <RecentActorsIcon fontSize='large' />
+                </NavbarListItemIcon>
                 <NavbarListName>Contact</NavbarListName>
               </ListItem>
             </NavbarListItem>
@@ -152,8 +162,7 @@ const NavbarContainer = styled.div`
   background: rgb(254, 216, 0);
 `;
 
-const NavbarIcon = styled(MenuIcon)`
-`;
+const NavbarIcon = styled(MenuIcon)``;
 
 const NavbarTitleContainer = styled(Link)`
   display: flex;
@@ -168,7 +177,7 @@ const NavbarHome = styled(Link)`
   text-decoration: none;
 
   &:hover {
-  color: #902302;
+    color: #902302;
   }
 `;
 
@@ -177,7 +186,7 @@ const NavbarMenu = styled(Link)`
   text-decoration: none;
 
   &:hover {
-  color: #902302;
+    color: #902302;
   }
 `;
 
@@ -186,7 +195,7 @@ const NavbarLocation = styled(Link)`
   text-decoration: none;
 
   &:hover {
-  color: #902302;
+    color: #902302;
   }
 `;
 
@@ -195,7 +204,7 @@ const NavbarAbout = styled(Link)`
   text-decoration: none;
 
   &:hover {
-  color: #902302;
+    color: #902302;
   }
 `;
 
@@ -204,7 +213,7 @@ const NavbarContact = styled(Link)`
   text-decoration: none;
 
   &:hover {
-  color: #902302;
+    color: #902302;
   }
 `;
 
@@ -232,23 +241,28 @@ const NavbarImage = styled.img`
 `;
 
 const NavbarListItem = styled.div`
-&:hover {
-  color: rgb(254, 216, 0);
-  background: #902302;
-  text-transform: uppercase;
+  &:hover {
+    color: rgb(254, 216, 0);
+    background: #902302;
+    text-transform: uppercase;
   }
 `;
 
 const NavbarListItemIcon = styled.div`
-padding-right: 30px;
+  padding-right: 30px;
 
-&:hover {
-  color: rgb(254, 216, 0);
-  background: #902302;
+  &:hover {
+    color: rgb(254, 216, 0);
+    background: #902302; 
   }
 `;
 
 const NavbarListName = styled.p`
-font-size: 20px;
-line-height: 0px;
+  font-size: 20px;
+  line-height: 0px;
+
+  &:hover {
+    font-size: 22px;
+  }
+
 `;

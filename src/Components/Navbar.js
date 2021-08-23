@@ -12,32 +12,29 @@ function Navbar() {
   const background = useSelector(selectNavbarBackground);
   const dispatch = useDispatch();
 
-
   const setNavBackground = () => {
     dispatch(setNavbarBackground(false));
 
     window.scrollTo({
-      top: 0
+      top: 0,
     });
-
   };
 
   const scrollToTop = () => {
     window.scrollTo({
-      top: 0
+      top: 0,
     });
-  }
-
+  };
 
   return (
     <NavbarContainer background={background}>
       <NavbarImageContainer>
         <NavbarListItem to='/' onClick={scrollToTop}>
-          <NavbarImage src='images/happy_lemon_logo.jpeg'/>
+          <NavbarImage src='images/happy_lemon_logo.jpeg' />
         </NavbarListItem>
       </NavbarImageContainer>
       <NavbarListContainer>
-        <NavbarList> 
+        <NavbarList>
           <NavbarListItem to='menu' onClick={setNavBackground}>
             Menu
           </NavbarListItem>
@@ -45,7 +42,10 @@ function Navbar() {
             Location
           </NavbarListItem>
           <NavbarListItem to='/'>
-            <NavbarImage src='images/happy_lemon_logo.jpeg' onClick={scrollToTop}/>
+            <NavbarImage
+              src='images/happy_lemon_logo.jpeg'
+              onClick={scrollToTop}
+            />
           </NavbarListItem>
           <NavbarListItem to='about' onClick={setNavBackground}>
             About
@@ -150,11 +150,13 @@ const NavbarListItem = styled(Link)`
   cursor: pointer;
   text-decoration: none;
 
-  &:hover {
-    border-bottom: 3px solid #902302;
-    padding-bottom: 15px;
-    font-size: 25px;
-    font-weight: bold;
-    color: #902302;
+  @media screen and (min-width: 700px) {
+    &:hover {
+      border-bottom: 3px solid #902302;
+      padding-bottom: 15px;
+      font-size: 18px;
+      font-weight: bold;
+      color: #902302;
+    }
   }
 `;

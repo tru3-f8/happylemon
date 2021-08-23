@@ -2,39 +2,41 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
-import { selectNavbarMainPageBackground, setNavbarBackground } from '../features/navbarBackgroundSlice';
+import {
+  selectNavbarMainPageBackground,
+  setNavbarBackground,
+} from '../features/navbarBackgroundSlice';
 import HamburgerIcon from '../MaterialUIFeatures/NavbarIcon';
 
 function NavbarMainPage() {
   const navbarMainPageBackground = useSelector(selectNavbarMainPageBackground);
   const dispatch = useDispatch();
 
-
   const setNavBackground = () => {
     dispatch(setNavbarBackground(false));
 
     window.scrollTo({
-      top: 0
+      top: 0,
     });
 
-    console.log('test')
+    console.log('test');
   };
 
   const scrollToTop = () => {
     window.scrollTo({
-      top: 0
+      top: 0,
     });
-  }
+  };
 
   return (
     <NavbarContainer background={navbarMainPageBackground}>
       <NavbarImageContainer>
         <NavbarListItem to='/' onClick={scrollToTop}>
-          <NavbarImage src='images/happy_lemon_logo.jpeg'/>
+          <NavbarImage src='images/happy_lemon_logo.jpeg' />
         </NavbarListItem>
       </NavbarImageContainer>
       <NavbarListContainer>
-        <NavbarList> 
+        <NavbarList>
           <NavbarListItem to='menu' onClick={setNavBackground}>
             Menu
           </NavbarListItem>
@@ -147,11 +149,13 @@ const NavbarListItem = styled(Link)`
   cursor: pointer;
   text-decoration: none;
 
-  &:hover {
-    border-bottom: 3px solid #902302;
-    padding-bottom: 15px;
-    font-size: 25px;
-    font-weight: bold;
-    color: #902302;
+  @media screen and (min-width: 700px) {
+    &:hover {
+      border-bottom: 3px solid #902302;
+      padding-bottom: 15px;
+      font-size: 18px;
+      font-weight: bold;
+      color: #902302;
+    }
   }
 `;
