@@ -5,6 +5,7 @@ import 'mapbox-gl/dist/mapbox-gl.css';
 
 function Mapbox() {
   mapboxgl.accessToken = process.env.REACT_APP_MAPBOX_ACCESS_TOKEN;
+  const mapboxId = process.env.REACT_APP_MAPBOX_ID
 
   const mapContainer = useRef(null);
   const map = useRef(null);
@@ -16,7 +17,7 @@ function Mapbox() {
     if (map.current) return;
     map.current = new mapboxgl.Map({
       container: mapContainer.current,
-      style: 'mapbox://styles/tru3-f8/cks9xy0xja4ln17p64tddukp9',
+      style: mapboxId,
       center: [-117.077, 32.689],
       zoom: 10,
     });
