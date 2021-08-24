@@ -11,7 +11,9 @@ import Location from './Components/Location';
 import styled from 'styled-components';
 import NavbarMainPage from './Components/NavbarMainPage';
 
+
 function App() {
+
   return (
     <Router>
       <AppContainer>
