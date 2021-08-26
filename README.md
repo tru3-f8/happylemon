@@ -3,7 +3,7 @@ The Happy Lemon clone website is built with React.js, CSS Stock (styled) Compone
 
 ## Dependencies
 - react-router-dom
-- react useState and useEffect
+- react hooks
 - react-slick
 - react-redux
 - slick-carousel
