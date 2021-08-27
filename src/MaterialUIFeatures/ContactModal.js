@@ -22,7 +22,6 @@ function getModalStyle() {
 const useStyles = makeStyles((theme) => ({
   paper: {
     position: 'absolute',
-    width: 400,
     backgroundColor: theme.palette.background.paper,
     border: '2px solid #000',
     boxShadow: theme.shadows[5],
@@ -45,14 +44,14 @@ export default function SimpleModal() {
   };
 
   const body = (
-    <div style={modalStyle} className={classes.paper}>
+    <Body className={classes.paper}>
       <h2 id='simple-modal-title'>Message Submitted</h2>
       <p id='simple-modal-description'>Thank you for contacting us!</p>
-    </div>
+    </Body>
   );
 
   return (
-    <div>
+    <ContactModalContainer>
       <div onClick={handleOpen}>
         <ContactButton />
       </div>
@@ -64,13 +63,25 @@ export default function SimpleModal() {
       >
         {body}
       </ContactModal>
-    </div>
+    </ContactModalContainer>
   );
 }
+
+const Body = styled.div`
+  width: 400px;
+
+  @media screen and (max-width: 420px) {
+    width: 280px;
+    height: 90px;
+  }
+`;
+
+const ContactModalContainer = styled.div``;
+
+const ContactModalBody = styled.div``;
 
 const ContactModal = styled(Modal)`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: auto auto;
 `;

@@ -1,5 +1,6 @@
 import React, { useRef, useEffect } from 'react';
 import styled from 'styled-components';
+import geojson from './MapData';
 import mapboxgl from '!mapbox-gl'; // eslint-disable-line import/no-webpack-loader-syntax
 import 'mapbox-gl/dist/mapbox-gl.css';
 
@@ -13,45 +14,6 @@ function Mapbox() {
   // const [lat, setLat] = useState(42.35);
   // const [zoom, setZoom] = useState(9);
 
-  const geojson = {
-    type: 'FeatureCollection',
-    features: [
-      {
-        type: 'Feature',
-        properties: {
-          message: 'Foo',
-          iconSize: [60, 60],
-        },
-        geometry: {
-          type: 'Point',
-          coordinates: [-66.324462, -16.024695],
-        },
-      },
-      {
-        type: 'Feature',
-        properties: {
-          message: 'Bar',
-          iconSize: [50, 50],
-        },
-        geometry: {
-          type: 'Point',
-          coordinates: [-61.21582, -15.971891],
-        },
-      },
-      {
-        type: 'Feature',
-        properties: {
-          message: 'Baz',
-          iconSize: [40, 40],
-        },
-        geometry: {
-          type: 'Point',
-          coordinates: [-63.292236, -18.281518],
-        },
-      },
-    ],
-  };
-
   useEffect(() => {
     // if (map.current) return;
     // map.current = new mapboxgl.Map({
@@ -63,17 +25,18 @@ function Mapbox() {
     const map = new mapboxgl.Map({
       container: mapContainer.current,
       style: mapboxId,
-      center: [-117.077, 32.689],
-      zoom: 10,
-
+      center: [-117.033918, 32.781565],
+      zoom: 9.1,
     });
 
-    const marker = new mapboxgl.Marker().setLngLat([-116.9621115658552, 32.621190888609654]).addTo(map);
-   
-  
-
+    geojson.map((locationMarker) => {
+      const marker = new mapboxgl.Marker()
+        .setLngLat(locationMarker.coordinates)
+        .setPopup(new mapboxgl.Popup({ offset: 30 })
+        .setHTML(`<h4>${locationMarker.location}</h4> ${locationMarker.address} ${locationMarker.city}`))
+        .addTo(map);
+    });
   });
-
 
   return (
     <MapboxContainer>
@@ -106,13 +69,4 @@ const MapboxMap = styled.div`
     align-items: center;
     margin: 0 auto;
   }
-`;
-
-const MapboxMarker = styled.div`
-    background-image: url('mapbox-icon.png');
-    background-size: cover;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    cursor: pointer;
 `;
