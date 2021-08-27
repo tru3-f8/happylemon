@@ -8,6 +8,7 @@ The Happy Lemon clone website is built with React.js, CSS Stock (styled) Compone
 - react-redux
 - slick-carousel
 - styled-components
+- material-UI
 - netlify
 
 ## Website
