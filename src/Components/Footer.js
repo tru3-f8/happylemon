@@ -65,6 +65,16 @@ const FooterContainer = styled.div`
     height: 780px;
   }
 
+  @media screen and (max-width: 1024px) {
+    height: 880px;
+    padding-bottom: 400px;
+  }
+  
+  @media screen and (max-width: 1023px) {
+    height: 780px;
+    padding-bottom: 0px;
+  }
+
   @media screen and (max-width: 730px) {
     height: 400px;
   }

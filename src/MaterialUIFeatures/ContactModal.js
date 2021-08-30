@@ -74,6 +74,11 @@ const Body = styled.div`
     width: 280px;
     height: 90px;
   }
+
+  @media screen and (max-width: 320px) {
+    width: 240px;
+    height: 90px;
+  }
 `;
 
 const ContactModalContainer = styled.div``;
@@ -84,4 +89,13 @@ const ContactModal = styled(Modal)`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media screen and (max-width: 1024px) {
+    margin-bottom: 500px;
+  }
+
+  @media screen and (max-width: 1023px) {
+    margin-bottom: 0px;
+  }
+
 `;
